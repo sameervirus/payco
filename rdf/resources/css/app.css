@@ -49,6 +49,7 @@
 .glide__arrows {
     -webkit-touch-callout: none;
     user-select: none;
+    cursor: pointer;
 }
 .glide__bullets {
     -webkit-touch-callout: none;
@@ -123,7 +124,7 @@
 }
 
 select {
-    background-image: url("../../public/images/select-arrow.png");
+    background-image: url("../../images/select-arrow.png");
     background-size: 12px 9px;
     background-position: right 2rem center;
 }
@@ -210,7 +211,7 @@ select {
 
 @media (min-width: 768px) {
     .invset-bg {
-        height: 1843px;
+        height: 1753px;
     }
     .invset-h1 {
         font-size: 100px;

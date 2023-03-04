@@ -14,5 +14,5 @@ export default defineConfig({
             refresh: true,
         }),
     ],
-    outDir: "../build",
+    build: { outDir: "../build" },
 });

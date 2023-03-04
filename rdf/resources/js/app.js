@@ -5,7 +5,7 @@ window.Alpine = Alpine;
 
 Alpine.start();
 import $ from "jquery";
-import validate from "jquery-validation";
+// import validate from "jquery-validation";
 window.$ = $;
 const config = {
     type: "slider",
@@ -64,67 +64,115 @@ $(function () {
 });
 
 $(function () {
-    // Initialize form validation on the registration form.
-    // It has the name attribute "registration"
-    $("form[id='registerForm']").validate({
-        // Specify validation rules
-        rules: {
-            // The key name on the left side is the name attribute
-            // of an input field. Validation rules are defined
-            // on the right side
-            name: "required",
-            email: {
-                required: true,
-                // Specify that email should be validated
-                // by the built-in "email" rule
-                email: true,
-            },
-        },
-        // Specify validation error messages
-        messages: {
-            name: "Please enter your Name",
-            email: "Please enter a valid email address",
-        },
-        // Make sure the form is submitted to the destination defined
-        // in the "action" attribute of the form when valid
-        submitHandler: function (form) {
-            form.submit();
-        },
+    // Validate Username
+    $("#namecheck").hide();
+    $("#emailcheck").hide();
+    $("#passwordcheck").hide();
+    let usernameError = false;
+    let emailError = false;
+    let passwordError = false;
+    $("#name").on("keyup", function () {
+        validateUsername();
+    });
+    $("#email").on("blur", function () {
+        validateEmail();
+    });
+    $("#password").on("keyup", function () {
+        validatePassword();
     });
 
-    $("form[id='loginForm']").validate({
-        // Specify validation rules
-        rules: {
-            // The key name on the left side is the name attribute
-            // of an input field. Validation rules are defined
-            // on the right side
-            email: {
-                required: true,
-                // Specify that email should be validated
-                // by the built-in "email" rule
-                email: true,
-            },
-            password: {
-                required: true,
-                minlength: 6,
-            },
-        },
-        // Specify validation error messages
-        messages: {
-            email: "Please enter a valid email address",
-        },
-        // Make sure the form is submitted to the destination defined
-        // in the "action" attribute of the form when valid
-        submitHandler: function (form) {
-            form.submit();
-        },
-    });
-
-    $("input").on("blur keyup", function () {
-        if ($("form[id='loginForm']").valid()) {
-            $("#loginForm #submitLogin").prop("disabled", false);
+    function validateUsername() {
+        let usernameValue = $("#name").val();
+        if (usernameValue.length == "") {
+            $("#namecheck").show();
+            usernameError = false;
+        } else if (usernameValue.length < 3 || usernameValue.length > 255) {
+            $("#namecheck").show();
+            $("#namecheck").html(
+                "**length of username must be between 3 and 255"
+            );
+            usernameError = false;
         } else {
-            $("#loginForm #submitLogin").prop("disabled", "disabled");
+            usernameError = true;
+            $("#namecheck").hide();
+        }
+        validateRegister();
+    }
+
+    // Validate Email
+    function validateEmail() {
+        let emailValue = $("#email").val();
+        let regex =
+            /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
+
+        if (emailValue.length == "") {
+            $("#emailcheck").show();
+            emailError = false;
+        } else if (!regex.test(emailValue)) {
+            $("#emailcheck").show();
+            emailError = false;
+        } else {
+            emailError = true;
+            $("#emailcheck").hide();
+        }
+        validateLogin();
+        validateRegister();
+    }
+
+    function validatePassword() {
+        let passwordValue = $("#password").val();
+        if (passwordValue.length == "") {
+            $("#passwordcheck").show();
+            passwordError = false;
+        } else if (passwordValue.length < 5 || passwordValue.length > 9) {
+            $("#passwordcheck").show();
+            $("#passwordcheck").html(
+                "**length of password must be between 6 and 8"
+            );
+            passwordError = false;
+        } else {
+            passwordError = true;
+            $("#passwordcheck").hide();
+        }
+        validateLogin();
+    }
+
+    function validateRegister() {
+        if (usernameError == true && emailError == true) {
+            $("#submitRegister").attr("disabled", false);
+        } else {
+            $("#submitRegister").attr("disabled", "disabled");
+        }
+    }
+
+    // Submit button
+    $("#submitRegister").on("click", function () {
+        validateUsername();
+        validateEmail();
+        if (usernameError == true && emailError == true) {
+            $("#registerForm").trigger("submit");
+            return true;
+        } else {
+            return false;
+        }
+    });
+
+    function validateLogin() {
+        if (passwordError == true && emailError == true) {
+            $("#submitLogin").attr("disabled", false);
+        } else {
+            $("#submitLogin").attr("disabled", "disabled");
+        }
+    }
+    // Submit button
+    $("#submitLogin").on("click", function () {
+        validateEmail();
+        validatePassword();
+        if (passwordError == true && emailError == true) {
+            $("#loginForm").trigger("submit");
+            return true;
+        } else {
+            return false;
         }
     });
 });

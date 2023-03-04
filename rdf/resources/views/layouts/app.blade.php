@@ -27,7 +27,7 @@
                     <div class="{{ in_array(Route::currentRouteName(), ['invset']) ? 'hidden' : '' }}">
                         <img src="/images/rectangle_9534.png" alt="" class="absolute top-40 -z-20 ">
                     </div>
-                    <div class="{{ in_array(Route::currentRouteName(), ['invset']) ? 'hidden' : '' }}">
+                    <div class="{{ in_array(Route::currentRouteName(), []) ? 'hidden' : '' }}">
                         <img src="/images/rectangle_9532.png" alt="" class="absolute right-0 top-52 -z-20 ">
                     </div>
                     <div class="{{ in_array(Route::currentRouteName(), ['invset']) ? 'hidden' : '' }}">

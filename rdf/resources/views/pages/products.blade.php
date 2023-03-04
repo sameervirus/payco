@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="absolute left-0 top-0 min-h-[1188px] w-full -z-10 bg-cover" style="background-image: url('/images/product.png');background-repeat: no-repeat;"></div>
+    <div class="absolute left-0 top-0 min-h-[1188px] w-full -z-10 bg-cover opacity-20" style="background-image: url('/images/product.jpg');background-repeat: no-repeat;"></div>
     <div class="flex flex-col pt-12 lg:pt-32">
         <div class="flex justify-center items-center">
             <img src="/images/vector.png" alt="vector" class=" w-[18px] h-[22px]">
@@ -34,7 +34,7 @@
             </div>
             <div class="lg:mt-0 mt-8 relative">
                 <div class="a absolute w-full h-full bg-black/40 z-10 rounded-r-3xl lg:rounded-r-[45px] "></div>
-                <img src="/images/girl-with-phone.png" alt="Social Payments">
+                <img class="rounded-r-3xl lg:rounded-r-[45px]" src="/images/girl-with-phone.jpg" alt="Social Payments">
             </div>
             <div class="flex flex-col space-y-5 px-5 lg:space-y-10 lg:mt-5">
                 <div class="flex gap-3 items-center">
@@ -103,7 +103,7 @@
             </div>
             <div class="lg:mt-0 mt-8 relative">
                 <div class="a absolute w-full h-full bg-black/40 z-10 rounded-l-3xl lg:rounded-l-[45px] "></div>
-                <img src="/images/product2.png" alt="Money Remittance">
+                <img class="rounded-l-3xl lg:rounded-l-[45px]" src="/images/product2.jpg" alt="Money Remittance">
             </div>
 
         </section>

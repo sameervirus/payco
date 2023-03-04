@@ -7,7 +7,7 @@
     </div>
     <div class="invset-bg"></div>
     <div class="invset-bg2"></div>
-    <div class="invset-bg3"></div>
+    {{-- <div class="invset-bg3"></div> --}}
     <div class="flex flex-col pt-12 lg:pt-22">
         <div class="grid grid-cols-12 lg:mx-20 mx-5 space-y-10">
             <div class="col-span-12 lg:col-span-5 flex flex-col uppercase">

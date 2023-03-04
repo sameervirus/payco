@@ -1,4 +1,8 @@
 <x-app-layout>
+    <div class="bacgrounds">
+        <div class="home-bg1"></div>
+        <div class="home-bg2"></div>
+    </div>
     <div class="absolute left-0 top-0 min-h-[1290px] w-full -z-10 bg-cover" style="background-image: url('/images/1060_1.png');background-repeat: no-repeat;"></div>
     <div class="hidden lg:flex flex-col absolute left-[3rem] top-[31rem] space-y-10">
         <a href="#">

@@ -1,5 +1,6 @@
 <?php
-
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Http\Request;
 
@@ -16,7 +17,7 @@ define('LARAVEL_START', microtime(true));
 |
 */
 
-if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php')) {
+if (file_exists($maintenance = __DIR__ .'/rdf/storage/framework/maintenance.php')) {
     require $maintenance;
 }
 
@@ -31,7 +32,7 @@ if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php'))
 |
 */
 
-require __DIR__.'/../vendor/autoload.php';
+require __DIR__ .'/rdf/vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -44,7 +45,14 @@ require __DIR__.'/../vendor/autoload.php';
 |
 */
 
-$app = require_once __DIR__.'/../bootstrap/app.php';
+$app = require_once __DIR__ .'/rdf/bootstrap/app.php';
+
+// set the public path to this directory
+$app->bind('path.public', function() {
+    return __DIR__;
+});
+
+
 
 $kernel = $app->make(Kernel::class);
 
