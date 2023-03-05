@@ -11,10 +11,10 @@
         </div>
         <div class="flex items-center justify-center lg:flex-row lg:gap-10 lg:mt-20 mt-10 overflow-hidden relative">
             <x-primary-button contentClasses="z-10 border-primary/40 -mr-8 lg:-mr-12 pl-5 pr-10 lg:pr-10 text-white bg-gradient-to-b from-primary to-[#DA291C] hover:text-white hover:bg-white/[0.13]">
-                <a href="#" class="uppercase font-medium text-xs lg:text-lg">Personal Services</a>
+                <a href="/contact-us" class="uppercase font-medium text-xs lg:text-lg">Personal Services</a>
             </x-primary-button>
             <x-primary-button contentClasses="border-primary/40 lg:-ml-14 pr-5 pl-10 lg:pl-20 text-primary/40 bg-[#00000000] hover:text-white hover:bg-white/[0.13]">
-                <a href="#" class="uppercase font-medium text-xs lg:text-lg">BUSINESS Services</a>
+                <a href="/contact-us" class="uppercase font-medium text-xs lg:text-lg">BUSINESS Services</a>
             </x-primary-button>
 
         </div>
@@ -36,7 +36,7 @@
                 <div class="a absolute w-full h-full bg-black/40 z-10 rounded-r-3xl lg:rounded-r-[45px] "></div>
                 <img class="rounded-r-3xl lg:rounded-r-[45px]" src="/images/girl-with-phone.jpg" alt="Social Payments">
             </div>
-            <div class="flex flex-col space-y-5 px-5 lg:space-y-10 lg:mt-5">
+            <div class="flex flex-col lg:mr-28 lg:mt-5 lg:space-y-10 lg:w-1/2 px-5 space-y-5">
                 <div class="flex gap-3 items-center">
                     <svg class="w-[38px] lg:w-[67px] h-[38px] lg:h-[67px]" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M24.5592 9.80841C24.5592 14.2949 20.9222 17.9318 16.4357 17.9318C11.9493 17.9318 8.3123 14.2949 8.3123 9.80841C8.3123 5.32197 11.9493 1.68499 16.4357 1.68499C20.9222 1.68499 24.5592 5.32197 24.5592 9.80841Z" stroke="url(#paint0_linear_123_4836)" stroke-width="1.4"/>
@@ -79,7 +79,7 @@
                 </svg>
             </div>
 
-            <div class="flex flex-col space-y-5 lg:space-y-10 lg:mt-5 lg:pl-10">
+            <div class="flex flex-col lg:ml-28 lg:mt-5 lg:pl-10 lg:space-y-10 lg:w-1/2 space-y-5">
                 <div class="flex gap-3 items-center">
                     <svg class="w-[38px] lg:w-[67px] h-[38px] lg:h-[67px]" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.5373 0.719719C17.4174 1.2955 15.9256 2.80038 15.376 4.93339C15.2059 5.5746 15.1797 8.07401 15.1797 22.992V40.3047H13.6225H12.0652L12.0129 38.6689L11.9736 37.0332L11.5418 36.6144C11.1754 36.248 11.0314 36.1826 10.4688 36.1826H9.81445L5.2082 40.8019L0.588867 45.4082V46.0625V46.7168L5.23438 51.3623C9.44805 55.576 9.93223 56.0078 10.3117 56.0078C10.8482 56.0078 11.4109 55.7199 11.7643 55.275C12.0129 54.9609 12.0391 54.7515 12.0391 53.3775V51.8203H13.6094H15.1797V56.5705C15.1797 61.6871 15.232 62.1451 15.8994 63.4668C16.3182 64.2912 17.365 65.3381 18.1895 65.7568C19.642 66.4896 19.2363 66.4765 33.4607 66.4765C42.6732 66.4765 46.7822 66.4373 47.2664 66.3326C48.8236 65.9924 50.4201 64.8015 51.1006 63.4668C51.8465 61.9881 51.8203 62.8125 51.8203 44.008V26.6953H53.3906H54.9609V28.2656V29.8359L55.4059 30.3332C55.8115 30.765 55.9162 30.8174 56.5182 30.8174H57.1855L61.7918 26.198L66.4111 21.5918V20.9375V20.2832L61.7918 15.6769L57.1855 11.0576H56.5312C55.9686 11.0576 55.8246 11.123 55.4582 11.4894L55.0264 11.9082L54.9871 13.5439L54.9348 15.1797H53.3775H51.8203V10.4295C51.8203 5.31289 51.768 4.85488 51.1006 3.5332C50.4201 2.19843 48.8236 1.00761 47.2664 0.667374C46.7822 0.562691 42.6863 0.52343 33.3953 0.536514C22.4816 0.536514 20.1 0.575775 19.5373 0.719719ZM47.4104 4.04355C47.6852 4.21367 48.0646 4.59316 48.2609 4.88105C48.5881 5.37831 48.6143 5.52226 48.6535 7.158L48.7059 8.89843H33.5131H18.3203V7.41972C18.3203 6.62148 18.3857 5.73163 18.4643 5.45683C18.6344 4.84179 19.4588 3.97812 20.0477 3.808C20.3094 3.72948 25.583 3.69023 33.6963 3.70331L46.9131 3.72948L47.4104 4.04355ZM48.6797 13.5963V15.1666L45.9971 15.2058L43.3145 15.2451L42.8957 15.6769C42.5293 16.0434 42.4639 16.1873 42.4639 16.75C42.4639 17.3127 42.5293 17.4566 42.8957 17.823L43.3145 18.2549H50.25H57.1855L57.5781 17.8623C57.8268 17.6006 58.01 17.2603 58.0754 16.907L58.167 16.3574L60.457 18.6474L62.7471 20.9375L60.457 23.2275L58.167 25.5176L58.0754 24.968C58.01 24.6146 57.8268 24.2744 57.5781 24.0127L57.1855 23.6201H50.25H43.3145L42.8957 24.0519C42.5293 24.4183 42.4639 24.5623 42.4639 25.125C42.4639 25.6877 42.5293 25.8316 42.8957 26.198L43.3145 26.6299L45.9971 26.6691L48.6797 26.7084V40.8412V54.9609H33.5H18.3203V53.4037V51.8334L21.0029 51.7941L23.6855 51.7549L24.1043 51.323C24.4707 50.9566 24.5361 50.8127 24.5361 50.25C24.5361 49.6873 24.4707 49.5433 24.1043 49.1769L23.6855 48.7451H16.75H9.81445L9.42188 49.1377C9.17324 49.3994 8.99004 49.7396 8.92461 50.093L8.83301 50.6426L6.54297 48.3525L4.25293 46.0625L6.54297 43.7724L8.83301 41.4824L8.92461 42.032C8.99004 42.3853 9.17324 42.7256 9.42188 42.9873L9.81445 43.3799H16.75H23.6855L24.1043 42.948C24.4707 42.5816 24.5361 42.4377 24.5361 41.875C24.5361 41.3123 24.4707 41.1683 24.1043 40.8019L23.6855 40.3701L21.0029 40.3308L18.3203 40.2916V26.1588V12.0391H33.5H48.6797V13.5963ZM48.6535 59.842C48.6143 61.4777 48.5881 61.6217 48.2609 62.1189C48.0646 62.4068 47.6852 62.7863 47.4104 62.9564L46.9131 63.2705H33.4869H20.0738L19.5373 62.9172C19.2494 62.7209 18.8699 62.3414 18.6998 62.0666C18.4119 61.6217 18.3857 61.3861 18.3465 59.8289L18.2941 58.1015H33.5H48.7059L48.6535 59.842Z" fill="url(#paint0_linear_291_358)"/>
@@ -112,7 +112,7 @@
                 <p class="lg:col-span-3 text-sm font-medium text-white/70 text-center lg:text-start lg:text-lg capitalize">All of our products and services are regulated by the trusted financial system of Switzerland, ensuring the security and reliability of your transactions.
 Get Started with a payco Business Account</p>
                 <x-primary-button contentClasses="w-full mt-5 lg:mt-0 lg:h-3/4 border-primary bg-white/0 text-primary hover:text-white">
-                    <a href="#" class=" uppercase font-medium lg:text-lg">Get Started</a>
+                    <a href="/register" class=" uppercase font-medium lg:text-lg">Get Started</a>
                 </x-primary-button>
             </div>
         </section>

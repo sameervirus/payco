@@ -1,16 +1,16 @@
 <x-app-layout>
-    <div class=" overflow-hidden w-full">
+    <div class="overflow-hidden w-full">
         <div class="-z-10 absolute bg-contain left-0 lg:bg-cover lg:min-h-[1290px] lg:w-full min-h-[550px] opacity-1 top-0 w-[700px]" style="background-image: url('/images/bg_invset.jpg');background-repeat: no-repeat;background-position: -160px 32%;"></div>
         <div class="-z-10 absolute bg-black/40 w-full h-full left-0 top-0"></div>
         <div class="hidden lg:block absolute left-0 top-0 h-[1066px] w-full -z-10" style="background-image: url('/images/invset_bg1.png');background-repeat: no-repeat;"></div>
-        <div class="absolute right-0 top-20 h-[993px] w-[870px] -z-10" style="background-image: url('/images/invset_bg2.png');background-repeat: no-repeat;"></div>
+        <div class="hidden lg:block absolute right-0 top-20 h-[993px] w-[870px] -z-10" style="background-image: url('/images/invset_bg2.png');background-repeat: no-repeat;"></div>
     </div>
     <div class="invset-bg"></div>
     <div class="invset-bg2"></div>
     {{-- <div class="invset-bg3"></div> --}}
     <div class="flex flex-col pt-12 lg:pt-22">
-        <div class="grid grid-cols-12 lg:mx-20 mx-5 space-y-10">
-            <div class="col-span-12 lg:col-span-5 flex flex-col uppercase">
+        <div class="grid grid-cols-12 lg:mx-28 mx-5 space-y-10">
+            <div class="col-span-12 lg:col-span-5 flex flex-col mb-10 uppercase">
                 <div class="flex justify-center lg:justify-start">
                     <p class="text-primary font-bold text-sm lg:text-xl ml-2">Invest With payco</p>
                 </div>
@@ -30,7 +30,7 @@
                     </linearGradient>
                     </defs>
                 </svg>
-                <svg class="w-[95px] h-[13px] lg:w-[335px] lg:h-[41px] -ml-[35px] lg:-ml-[47%] mt-32 lg:mt-32" viewBox="0 0 235 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-[95px] h-[13px] lg:w-[335px] lg:h-[41px] -ml-[35px] lg:-ml-[47%] mt-28 lg:mt-28" viewBox="0 0 235 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M54.001 6H227" stroke="url(#paint0_linear_123_3572)"/>
                     <circle cx="229" cy="6" r="6" fill="white"/>
                     <defs>
@@ -41,7 +41,7 @@
                     </linearGradient>
                     </defs>
                 </svg>
-                <svg class="w-[95px] h-[13px] lg:w-[335px] lg:h-[41px] -ml-[35px] lg:-ml-[47%] mt-60 lg:mt-60" viewBox="0 0 235 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-[95px] h-[13px] lg:w-[335px] lg:h-[41px] -ml-[35px] lg:-ml-[47%] mt-40 lg:mt-40" viewBox="0 0 235 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M54.001 6H227" stroke="url(#paint0_linear_123_3572)"/>
                     <circle cx="229" cy="6" r="6" fill="white"/>
                     <defs>
@@ -149,11 +149,11 @@
         <h1 class="invset-h1">vest With Payco</h1>
         <h1 class="invset-h1">Invest With Payco</h1>
     </section>
-    <section class="flex flex-col w-full relative">
-            <div class="flex flex-col relative overflow-hidden items-center lg:my-16 lg:mx-8 lg:py-16 lg:px-16 border rounded-[20px] lg:rounded-[90px] border-none rounded-br-none lg:rounded-br-none"
+    <section class="flex flex-col lg:mx-28 relative">
+            <div class="flex flex-col relative overflow-hidden items-center lg:my-16 lg:py-16 lg:px-16 border rounded-[20px] lg:rounded-[90px] border-none rounded-br-none lg:rounded-br-none"
             style="background-image: url('/images/rectangle_9546.png')">
                 <div class="absolute left-0 top-0 w-full h-full bg-cover" style="background: linear-gradient(266.6deg, #94554A 1.04%, #5353A7 97.52%);opacity: 0.85;backdrop-filter: blur(5px);"></div>
-                <div class="absolute left-0 top-0 w-full h-full bg-cover" style="background-image: url('/images/mask-group.png')"></div>
+                <div class="absolute left-0 top-0 w-full h-full bg-contain bg-no-repeat" style="background-image: url('/images/mask-group.png')"></div>
                 <div class="grid grid-cols-2 gap-2 lg:gap-8 items-center z-10 px-3 py-6 lg:py-10 lg:px-16 lg:mb-20">
                     <h2 class="text-2xl lg:text-[70px] font-extrabold leading-[30px] lg:leading-[85px] tracking-[-0.02em] text-white">Take a step!</h2>
                     <p class="text-[10px] lg:text-[22px] font-light text-[#F2F2F2] lg:leading-[43px]">If you're interested in learning more about investing in Payco, please contact us for more information. </p>

@@ -1,7 +1,7 @@
 <x-app-layout>
     <div class="absolute left-0 top-0 min-h-[1290px] w-full -z-10 bg-cover opacity-5" style="background-image: url('/images/about.jpg');background-repeat: no-repeat;"></div>
     <div class="flex flex-col pt-12 lg:pt-32">
-        <div class="grid grid-cols-1 lg:grid-cols-2 mx-5 lg:mx-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 mx-5 lg:mx-28">
             <div class="flex flex-col uppercase">
                 <div class="flex justify-center lg:justify-start">
                     <svg class="w-5 h-5 lg:w-6 lg:h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -40,7 +40,7 @@
             </div>
             <div class="lg:hidden text-center mt-10">
                 <x-primary-button contentClasses="px-10 border-white text-white bg-white/[0.13] hover:text-white hover:bg-primary">
-                    <a href="who-we-are" class="flex items-center uppercase font-medium lg:text-lg">Who we Are <svg class="ml-5" xmlns="http://www.w3.org/2000/svg" width="28" height="30" viewBox="0 0 28 30" fill="none">
+                    <a href="#who-we-are" class="flex items-center uppercase font-medium lg:text-lg">Who we Are <svg class="ml-5" xmlns="http://www.w3.org/2000/svg" width="28" height="30" viewBox="0 0 28 30" fill="none">
                         <g filter="url(#filter0_d_174_38)">
                         <path d="M14 16L18 12L16.6 10.6L15 12.2V8H13V12.2L11.4 10.6L10 12L14 16ZM14 22C12.6167 22 11.3167 21.7373 10.1 21.212C8.88333 20.6873 7.825 19.975 6.925 19.075C6.025 18.175 5.31267 17.1167 4.788 15.9C4.26267 14.6833 4 13.3833 4 12C4 10.6167 4.26267 9.31667 4.788 8.1C5.31267 6.88333 6.025 5.825 6.925 4.925C7.825 4.025 8.88333 3.31233 10.1 2.787C11.3167 2.26233 12.6167 2 14 2C15.3833 2 16.6833 2.26233 17.9 2.787C19.1167 3.31233 20.175 4.025 21.075 4.925C21.975 5.825 22.6873 6.88333 23.212 8.1C23.7373 9.31667 24 10.6167 24 12C24 13.3833 23.7373 14.6833 23.212 15.9C22.6873 17.1167 21.975 18.175 21.075 19.075C20.175 19.975 19.1167 20.6873 17.9 21.212C16.6833 21.7373 15.3833 22 14 22Z" fill="white"/>
                         </g>
@@ -61,7 +61,7 @@
             </div>
         </div>
     </div>
-    <section id="who-we-are" class="flex flex-col mx-5 lg:mx-20 mb-10 mt-20 lg:mt-32">
+    <section id="who-we-are" class="flex flex-col mx-5 lg:mx-28 mb-10 mt-20 lg:mt-32">
         <div>
             <x-section-title><span class="text-primary">W</span>ho We Are</x-section-title>
             <x-section-subtitle>Know More About us!</x-section-subtitle>
@@ -112,7 +112,7 @@
             </div>
         </div>
     </section>
-    <section class="flex flex-col mx-5 lg:mx-20 mb-10 mt-20 lg:mt-32">
+    <section class="flex flex-col mx-5 lg:mx-28 mb-10 mt-20 lg:mt-32">
         <div>
             <x-section-title><span class="text-primary">B</span>oarding Members</x-section-title>
             <x-section-subtitle>Meet our team of Experts</x-section-subtitle>
