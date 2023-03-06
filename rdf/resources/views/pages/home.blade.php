@@ -42,7 +42,7 @@
                 <a href="/register" class="uppercase font-medium lg:text-lg">Get Started</a>
             </x-primary-button>
             <x-primary-button contentClasses="border-white text-white bg-primary hover:text-white hover:bg-white/[0.13]">
-                <a href="/contact-us" class="uppercase font-medium lg:text-lg">Invest With Payco</a>
+                <a href="/contact-us" class="uppercase font-medium lg:text-lg">Invest In Payco</a>
             </x-primary-button>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-10 lg:justify-between items-center px-5 lg:px-36 mt-20 backdrop-blur-[5px]">

@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WebsiteController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
@@ -20,11 +22,15 @@ Route::get('/', [WebsiteController::class, 'home'])->name('home');
 Route::get('/about-us', [WebsiteController::class, 'about'])->name('about');
 Route::get('/products', [WebsiteController::class, 'products'])->name('products');
 Route::get('/invset', [WebsiteController::class, 'invset'])->name('invset');
+Route::get('/contact-us', [WebsiteController::class, 'contacts'])->name('contacts');
+Route::post('/contact-us', [WebsiteController::class, 'feedback'])->name('feedback');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::resource('posts', PostController::class);
+Route::get('/admin/feedback', [AdminController::class, 'feeds']);
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

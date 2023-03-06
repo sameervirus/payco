@@ -15,7 +15,7 @@ module.exports = {
                 mono: ["Montserrat", ...defaultTheme.fontFamily.sans],
             },
             colors: {
-                primary: "#DC4F3B",
+                primary: "#ff0000",
             },
         },
     },

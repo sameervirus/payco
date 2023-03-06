@@ -13,7 +13,7 @@
                     <circle cx="6" cy="6" r="6" fill="url(#paint0_linear_123_2830)"/>
                     <defs>
                     <linearGradient id="paint0_linear_123_2830" x1="6" y1="0" x2="6" y2="12" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#DC4F3B"/>
+                    <stop stop-color="#ff0000"/>
                     <stop offset="1" stop-color="#DA291C"/>
                     </linearGradient>
                     </defs>

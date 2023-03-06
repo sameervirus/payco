@@ -14,6 +14,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
         <!-- Scripts -->
+        <script src="https://cdn.tailwindcss.com"></script>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="antialiased bg-black font-sans overflow-x-hidden relative">
@@ -24,31 +25,31 @@
                     <div class="{{ in_array(Route::currentRouteName(), ['invset']) ? 'hidden' : '' }}">
                         <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-0 -z-20 ">
                     </div>
-                    <div class="{{ in_array(Route::currentRouteName(), ['invset']) ? 'hidden' : '' }}">
+                    <div class="{{ in_array(Route::currentRouteName(), ['invset', 'contacts']) ? 'hidden' : '' }}">
                         <img src="/images/rectangle_9534.png" alt="" class="absolute top-40 -z-20 ">
                     </div>
                     <div class="{{ in_array(Route::currentRouteName(), []) ? 'hidden' : '' }}">
                         <img src="/images/rectangle_9532.png" alt="" class="absolute right-0 top-52 -z-20 ">
                     </div>
-                    <div class="{{ in_array(Route::currentRouteName(), ['invset']) ? 'hidden' : '' }}">
+                    <div class="{{ in_array(Route::currentRouteName(), ['invset', 'contacts']) ? 'hidden' : '' }}">
                         <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-[1000px] -z-20 ">
                     </div>
-                    <div class="{{ in_array(Route::currentRouteName(), ['products', 'invset']) ? 'hidden' : '' }}">
+                    <div class="{{ in_array(Route::currentRouteName(), ['products', 'invset', 'contacts']) ? 'hidden' : '' }}">
                         <img src="/images/rectangle_9534.png" alt="" class="absolute top-[1300px] -z-20 ">
                     </div>
-                    <div class="{{ in_array(Route::currentRouteName(), ['products', 'invset']) ? 'hidden' : '' }}">
+                    <div class="{{ in_array(Route::currentRouteName(), ['products', 'invset', 'contacts']) ? 'hidden' : '' }}">
                         <img src="/images/rectangle_9532.png" alt="" class="absolute right-0 top-[1300px] -z-20 ">
                     </div>
-                    <div class="{{ in_array(Route::currentRouteName(), ['products', 'invset']) ? 'hidden' : '' }}">
+                    <div class="{{ in_array(Route::currentRouteName(), ['products', 'invset', 'contacts']) ? 'hidden' : '' }}">
                         <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-[1500px] -z-20 ">
                     </div>
-                    <div class="{{ in_array(Route::currentRouteName(), ['about', 'products', 'invset']) ? 'hidden' : '' }}">
+                    <div class="{{ in_array(Route::currentRouteName(), ['about', 'products', 'invset', 'contacts']) ? 'hidden' : '' }}">
                         <img src="/images/rectangle_9534.png" alt="" class="absolute top-[1800px] -z-20 ">
                     </div>
-                    <div class="{{ in_array(Route::currentRouteName(), ['about', 'products', 'invset']) ? 'hidden' : '' }}">
+                    <div class="{{ in_array(Route::currentRouteName(), ['about', 'products', 'invset', 'contacts']) ? 'hidden' : '' }}">
                         <img src="/images/rectangle_9532.png" alt="" class="absolute right-0 top-[1600px] -z-20 ">
                     </div>
-                    <div class="{{ in_array(Route::currentRouteName(), ['about', 'products', 'invset']) ? 'hidden' : '' }}">
+                    <div class="{{ in_array(Route::currentRouteName(), ['about', 'products', 'invset', 'contacts']) ? 'hidden' : '' }}">
                         <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-[2000px] -z-20 ">
                     </div>
 
@@ -66,14 +67,14 @@
                                     <path d="M24.75 22.2V13.8C24.75 13.45 24.6 13.2125 24.3 13.0875C24 12.9625 23.725 13.025 23.475 13.275L19.8 16.95C19.5 17.25 19.35 17.6 19.35 18C19.35 18.4 19.5 18.75 19.8 19.05L23.475 22.725C23.725 22.975 24 23.0375 24.3 22.9125C24.6 22.7875 24.75 22.55 24.75 22.2ZM7.5 31.5C6.675 31.5 5.9685 31.2065 5.3805 30.6195C4.7935 30.0315 4.5 29.325 4.5 28.5V7.5C4.5 6.675 4.7935 5.9685 5.3805 5.3805C5.9685 4.7935 6.675 4.5 7.5 4.5H28.5C29.325 4.5 30.0315 4.7935 30.6195 5.3805C31.2065 5.9685 31.5 6.675 31.5 7.5V28.5C31.5 29.325 31.2065 30.0315 30.6195 30.6195C30.0315 31.2065 29.325 31.5 28.5 31.5H7.5ZM15 28.5H28.5V7.5H15V28.5Z" fill="url(#paint0_linear_123_5599)"/>
                                     <defs>
                                     <linearGradient id="paint0_linear_123_5599" x1="18" y1="4.5" x2="18" y2="31.5" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#DC4F3B"/>
+                                    <stop stop-color="#ff0000"/>
                                     <stop offset="1" stop-color="#DA291C"/>
                                     </linearGradient>
                                     </defs>
                                 </svg>
                             </button>
                         </div>
-                        <div class="flex items-center">
+                        <div class="hidden items-center">
                             <img src="/images/ic_baseline-account-circle.png" alt="avatar" class="h-[30px]">
                             @auth
                             <span class="text-white pl-2">{{ auth()->user()->name }}</span>
@@ -86,7 +87,7 @@
                             <a href="/about-us" class="py-4">About Us</a>
                             <a href="/products" class="py-4">Products</a>
                             <a href="#" class="py-4">blog</a>
-                            <a href="#" class="py-4">Contact Us</a>
+                            <a href="/contact-us" class="py-4">Contact Us</a>
                         </div>
                         <div class="text-center mt-5">
                             <x-primary-button contentClasses="border-[#F4B554] text-[#F4B554]">
@@ -100,17 +101,17 @@
                             <div class="inline-flex focus:outline-none logo ps-3 md:ps-0 lg:mx-0 h-8 lg:h-14">
                                 <img src="/images/logo.png" alt="Payco" />
                             </div>
-                            <div class="hidden lg:flex content-between justify-between h-5 lg:min-w-[565px] text-white ">
+                            <div class="hidden lg:flex content-between justify-between h-5 gap-10 text-white ">
                                 <a href="/" class="nav-item {{ (request()->is('/')) ? 'active' : '' }} hover:text-primary">Home</a>
                                 <a href="/about-us" class="nav-item {{ (request()->is('about-us')) ? 'active' : '' }} hover:text-primary">About Us</a>
                                 <a href="/products" class="nav-item {{ (request()->is('products')) ? 'active' : '' }} hover:text-primary">Products</a>
                                 <a href="#" class="nav-item hover:text-primary">blog</a>
-                                <a href="#" class="nav-item hover:text-primary">Contact Us</a>
+                                <a href="/contact-us" class="nav-item hover:text-primary">Contact Us</a>
                             </div>
                             <x-primary-button contentClasses="hidden lg:block lg:px-6 border-[#F4B554] text-[#F4B554] hover:text-white hover:bg-primary hover:border-primary">
                                 <a href="/invset" class="uppercase font-medium text-lg ">Invest With Payco</a>
                             </x-primary-button>
-                            <div class="hidden lg:flex items-center justify-between">
+                            <div class="hidden lg:hidden items-center justify-between">
                                 <img src="/images/ic_baseline-account-circle.png" alt="avatar" class="">
                                 @auth
                                 <span class="text-white pl-2">{{ auth()->user()->name }}</span>
