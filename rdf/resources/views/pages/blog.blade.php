@@ -69,7 +69,7 @@
                 </svg>
             </div>
             <div class="grid grid-cols-2 gap-7 lg:grid-cols-12">
-                <div class="col-span-2 lg:col-span-3 relative whitespace-nowrap lg:whitespace-normal">
+                <div class="col-span-2 lg:col-span-3 lg:overflow-y-hidden lg:whitespace-normal overflow-y-auto relative whitespace-nowrap">
                     <x-primary-button contentClasses="select-category lg:w-full mt-4 z-10 border-white/10 border-[1px] lg:px-6 lg:py-5 text-white hover:bg-gradient-to-b from-primary to-[#DA291C] bg-white/4 active-category">
                         <a href="#" class="flex items-center uppercase font-medium text-xs lg:text-base ">
                         <img class="w-[22px] h-[22px] lg:w-[31px] lg:h-[31px] mr-2" src="/images/icon-payment.png" alt="">
