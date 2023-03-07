@@ -124,7 +124,7 @@
 }
 
 select {
-    background-image: url("../../images/select-arrow.png");
+    background-image: url("./select-arrow.png");
     background-size: 12px 9px;
     background-position: right 2rem center;
 }
@@ -209,6 +209,17 @@ select {
     white-space: nowrap;
 }
 
+.bg-blog {
+    position: absolute;
+    width: 345px;
+    height: 351px;
+    left: 140px;
+    top: 235px;
+    background: rgba(31, 53, 92, 0.7);
+    filter: blur(50px);
+    border-radius: 800px;
+}
+
 @media (min-width: 768px) {
     .invset-bg {
         height: 1753px;
@@ -216,4 +227,9 @@ select {
     .invset-h1 {
         font-size: 100px;
     }
+}
+
+#categories-div img {
+    width: 100%;
+    height: auto;
 }

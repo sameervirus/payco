@@ -292,3 +292,41 @@ $(function () {
             });
     });
 });
+
+$(function () {
+    $(".select-category").on("click", function (e) {
+        e.preventDefault();
+        $(".select-category").each(function () {
+            $(this).removeClass("active-category");
+        });
+        $(this).addClass("active-category");
+        $("#category-title").text($(this).text());
+        const slug = $(this)
+            .text()
+            .replace(/[^\w\s]/gi, "")
+            .trim()
+            .replace(/[\s]+/g, "-")
+            .toLowerCase();
+        $("#category-link").attr("href", "/category/" + slug);
+
+        $("#categories-div > *:gt(0)").remove();
+
+        var sp = posts.filter(function (p) {
+            return p.categories.find(function (c) {
+                return c.slug == slug;
+            });
+        });
+
+        let htmlData = "";
+        if (sp.length > 0) {
+            for (let i = 0; i < 4; i++) {
+                htmlData += `<div id="${sp[i].id}" class="relative max-h-[180px] overflow-hidden rouned-[10px]"><img class="h-full rounded-[10px] w-auto" src="/storage/${sp[i].photo}" alt="The three key areas of fintech acquisition success">                        <div class="absolute flex items-end left-0 top-0 w-full h-full p-5 bg-gradient-to-t from-black via-black/30 to-black/30">                            <a href="/post/${sp[i].slug}"><h4 class="capitalize font-light leading-3 lg:leading-5 text-[10px] lg:text-[16px] text-white hover:text-primary">${sp[i].title}</h4></a>                        </div>                    </div>                `;
+            }
+        } else {
+            htmlData =
+                '<div class="col-span-2 text-center text-white">No posts found in this category</div>';
+        }
+
+        $("#categories-div").append(htmlData);
+    });
+});

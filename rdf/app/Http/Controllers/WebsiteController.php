@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Feed;
+use App\Models\Post;
 
 class WebsiteController extends Controller
 {
@@ -25,6 +26,11 @@ class WebsiteController extends Controller
 
     public function contacts() {
         return view('pages.contacts');
+    }
+
+    public function blog() {
+        $posts = Post::with('categories')->orderBy('created_at', 'DESC')->get();
+        return view('pages.blog', compact('posts'));
     }
 
     public function feedback(Request $request) {

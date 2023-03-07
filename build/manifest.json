@@ -1,11 +1,15 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-c4604f8a.css",
+    "file": "assets/app-e10a5fff.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
+  "resources/css/select-arrow.png": {
+    "file": "assets/select-arrow-d01faded.png",
+    "src": "resources/css/select-arrow.png"
+  },
   "resources/js/app.js": {
-    "file": "assets/app-23d26f1c.js",
+    "file": "assets/app-34a7bd36.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }

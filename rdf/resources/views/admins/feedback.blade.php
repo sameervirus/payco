@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-guest-layout>
     <link rel="stylesheet" href="//cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script src="//cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
@@ -45,4 +45,4 @@
     <script>
         $('.table').dataTable();
     </script>
-</x-app-layout>
+</x-guest-layout>

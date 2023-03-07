@@ -22,6 +22,7 @@ Route::get('/', [WebsiteController::class, 'home'])->name('home');
 Route::get('/about-us', [WebsiteController::class, 'about'])->name('about');
 Route::get('/products', [WebsiteController::class, 'products'])->name('products');
 Route::get('/invset', [WebsiteController::class, 'invset'])->name('invset');
+Route::get('/blog', [WebsiteController::class, 'blog'])->name('blog');
 Route::get('/contact-us', [WebsiteController::class, 'contacts'])->name('contacts');
 Route::post('/contact-us', [WebsiteController::class, 'feedback'])->name('feedback');
 
@@ -29,7 +30,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::resource('posts', PostController::class);
+Route::resource('posts', PostController::class, ['as' => 'admin']);
 Route::get('/admin/feedback', [AdminController::class, 'feeds']);
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -44,5 +45,6 @@ require __DIR__.'/register.php';
 Route::get("test", function() {
     Artisan::call('optimize:clear');
     Artisan::call('config:clear');
+    Artisan::call('storage:link');
     return public_path();
 });

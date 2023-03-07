@@ -34,7 +34,7 @@
                     <div class="{{ in_array(Route::currentRouteName(), ['invset', 'contacts']) ? 'hidden' : '' }}">
                         <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-[1000px] -z-20 ">
                     </div>
-                    <div class="{{ in_array(Route::currentRouteName(), ['products', 'invset', 'contacts']) ? 'hidden' : '' }}">
+                    <div class="{{ in_array(Route::currentRouteName(), ['products', 'invset', 'contacts', 'blog']) ? 'hidden' : '' }}">
                         <img src="/images/rectangle_9534.png" alt="" class="absolute top-[1300px] -z-20 ">
                     </div>
                     <div class="{{ in_array(Route::currentRouteName(), ['products', 'invset', 'contacts']) ? 'hidden' : '' }}">
@@ -43,13 +43,13 @@
                     <div class="{{ in_array(Route::currentRouteName(), ['products', 'invset', 'contacts']) ? 'hidden' : '' }}">
                         <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-[1500px] -z-20 ">
                     </div>
-                    <div class="{{ in_array(Route::currentRouteName(), ['about', 'products', 'invset', 'contacts']) ? 'hidden' : '' }}">
+                    <div class="{{ in_array(Route::currentRouteName(), ['about', 'products', 'invset', 'contacts', 'blog']) ? 'hidden' : '' }}">
                         <img src="/images/rectangle_9534.png" alt="" class="absolute top-[1800px] -z-20 ">
                     </div>
-                    <div class="{{ in_array(Route::currentRouteName(), ['about', 'products', 'invset', 'contacts']) ? 'hidden' : '' }}">
+                    <div class="{{ in_array(Route::currentRouteName(), ['about', 'products', 'invset', 'contacts', 'blog']) ? 'hidden' : '' }}">
                         <img src="/images/rectangle_9532.png" alt="" class="absolute right-0 top-[1600px] -z-20 ">
                     </div>
-                    <div class="{{ in_array(Route::currentRouteName(), ['about', 'products', 'invset', 'contacts']) ? 'hidden' : '' }}">
+                    <div class="{{ in_array(Route::currentRouteName(), ['about', 'products', 'invset', 'contacts', 'blog']) ? 'hidden' : '' }}">
                         <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-[2000px] -z-20 ">
                     </div>
 
@@ -86,7 +86,7 @@
                             <a href="/" class="py-4">Home</a>
                             <a href="/about-us" class="py-4">About Us</a>
                             <a href="/products" class="py-4">Products</a>
-                            <a href="#" class="py-4">blog</a>
+                            <a href="/blog" class="py-4">blog</a>
                             <a href="/contact-us" class="py-4">Contact Us</a>
                         </div>
                         <div class="text-center mt-5">
@@ -105,8 +105,8 @@
                                 <a href="/" class="nav-item {{ (request()->is('/')) ? 'active' : '' }} hover:text-primary">Home</a>
                                 <a href="/about-us" class="nav-item {{ (request()->is('about-us')) ? 'active' : '' }} hover:text-primary">About Us</a>
                                 <a href="/products" class="nav-item {{ (request()->is('products')) ? 'active' : '' }} hover:text-primary">Products</a>
-                                <a href="#" class="nav-item hover:text-primary">blog</a>
-                                <a href="/contact-us" class="nav-item hover:text-primary">Contact Us</a>
+                                <a href="/blog" class="nav-item {{ (request()->is('blog')) ? 'active' : '' }} hover:text-primary">blog</a>
+                                <a href="/contact-us" class="nav-item {{ (request()->is('contact-us')) ? 'active' : '' }} hover:text-primary">Contact Us</a>
                             </div>
                             <x-primary-button contentClasses="hidden lg:block lg:px-6 border-[#F4B554] text-[#F4B554] hover:text-white hover:bg-primary hover:border-primary">
                                 <a href="/invset" class="uppercase font-medium text-lg ">Invest With Payco</a>
