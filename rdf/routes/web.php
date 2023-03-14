@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WebsiteController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\PageTextController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
@@ -32,6 +33,7 @@ Route::get('/dashboard', function () {
 
 Route::resource('posts', PostController::class, ['as' => 'admin']);
 Route::get('/admin/feedback', [AdminController::class, 'feeds']);
+Route::resource('/admin/page_texts', PageTextController::class, ['as' => 'admins']);
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
