@@ -9,10 +9,10 @@
                     </svg>
                     <p class="text-primary font-bold text-sm lg:text-xl ml-2">Meet Our team</p>
                 </div>
-                <h2 class="text-white/[0.20] mt-8 lg:mt-12 text-center lg:text-start text-xl lg:text-[34px] font-light tracking-[-0.01em]">Our team is made up of</h2>
-                <h2 class="text-white/[0.80] mt-2 lg:mt-4 text-center lg:text-start text-xl lg:text-[38px] font-medium tracking-[-0.01em]">experienced professionals </h2>
-                <h2 class="text-white/[0.20] mt-6 lg:mt-8 text-center lg:text-start text-xl lg:text-[34px] font-light tracking-[-0.01em]">with a passion for</h2>
-                <h2 class="text-white/[0.80] mt-2 lg:mt-0 text-center lg:text-start text-xl lg:text-[38px] font-medium tracking-[-0.01em] lg:leading-[60px]">innovation and customer satisfaction.</h2>
+                <h2 class="text-white/[0.20] mt-8 lg:mt-12 text-center lg:text-start text-xl lg:text-[34px] font-light tracking-[-0.01em]">{{ $page_texts->where('title', 'About Hero 1')->first()->content ?? ''}}</h2>
+                <h2 class="text-white/[0.80] mt-2 lg:mt-4 text-center lg:text-start text-xl lg:text-[38px] font-medium tracking-[-0.01em]">{{ $page_texts->where('title', 'About Hero 2')->first()->content ?? ''}}</h2>
+                <h2 class="text-white/[0.20] mt-6 lg:mt-8 text-center lg:text-start text-xl lg:text-[34px] font-light tracking-[-0.01em]">{{ $page_texts->where('title', 'About Hero 3')->first()->content ?? ''}}</h2>
+                <h2 class="text-white/[0.80] mt-2 lg:mt-0 text-center lg:text-start text-xl lg:text-[38px] font-medium tracking-[-0.01em] lg:leading-[60px]">{{ $page_texts->where('title', 'About Hero 4')->first()->content ?? ''}}</h2>
                 <div class="hidden lg:block lg:text-start mt-20">
                     <x-primary-button contentClasses="border-white text-white bg-white/[0.13] hover:text-white hover:bg-primary">
                         <a href="#who-we-are" class="flex uppercase font-medium lg:text-lg">Who we Are <svg class="ml-5" xmlns="http://www.w3.org/2000/svg" width="28" height="30" viewBox="0 0 28 30" fill="none">
@@ -78,7 +78,7 @@
                     <a data-id="mission" class="acc-head text-white active" href="#"><h3 class="text-xl lg:text-3xl font-bold">OUR MISSION</h3></a>
                 </div>
                 <div id="sm-mission" class="acc-body lg:hidden ml-[70px] text-xs text-[#CAC8C899] leading-[20px] duration-300 ease-out transition-all">
-                    Our mission is to provide the best possible service to our customers, using innovative technology and a commitment to customer satisfaction. Our objectives include expanding our reach globally, increasing customer satisfaction, and continually improving our products and services.
+                    {{ $page_texts->where('title', 'About Mission')->first()->content ?? ''}}
                 </div>
                 <div class="flex items-center">
                     <div class="p-3 bg-black rounded-full border-white border-2 mr-6">
@@ -87,7 +87,7 @@
                     <a data-id="vision" class="acc-head text-white" href="#"><h3 class="text-xl lg:text-3xl font-bold">OUR VISION</h3></a>
                 </div>
                 <div id="sm-vision" class="acc-body lg:hidden hidden ml-[70px] text-xs text-[#CAC8C899] leading-[20px] duration-300 ease-out transition-all">
-                    Our vision is to revolutionize the way that individuals and businesses conduct cross-border payments, making it easier and more secure for everyone.
+                    {{ $page_texts->where('title', 'About Vision')->first()->content ?? ''}}
                 </div>
                 <div class="flex items-center">
                     <div class="p-3 bg-black rounded-full border-white border-2 mr-6">
@@ -96,32 +96,40 @@
                     <a data-id="goal" class="acc-head text-white" href="#"><h3 class=" text-xl lg:text-3xl font-bold">OUR GOAL</h3></a>
                 </div>
                 <div id="sm-goal" class="acc-body lg:hidden hidden ml-[70px] text-xs text-[#CAC8C899] leading-[20px] duration-300 ease-out transition-all">
-                    Our goals are to become the leading provider of cross-border payment solutions and to help individuals and businesses around the world conduct their transactions with ease and confidence.
+                    {{ $page_texts->where('title', 'About Goal')->first()->content ?? ''}}
                 </div>
             </div>
             <div class="hidden lg:block col-span-3 lg:text-3xl text-[#CAC8C899] mt-[72px] mx-20 relative">
                 <div id="lg-mission" class="acc-lg-body absolute top-0 leading-[58px] duration-300 ease-out transition-all">
-                    Our mission is to provide the best possible service to our customers, using innovative technology and a commitment to customer satisfaction. Our objectives include expanding our reach globally, increasing customer satisfaction, and continually improving our products and services.
+                    {{ $page_texts->where('title', 'About Mission')->first()->content ?? ''}}
                 </div>
                 <div id="lg-vision" class="acc-lg-body absolute bottom-0 opacity-0 leading-[58px] duration-300 ease-out transition-all translate-y-full">
-                    Our vision is to revolutionize the way that individuals and businesses conduct cross-border payments, making it easier and more secure for everyone.
+                    {{ $page_texts->where('title', 'About Vision')->first()->content ?? ''}}
                 </div>
                 <div id="lg-goal" class="acc-lg-body absolute bottom-0 opacity-0 leading-[58px] duration-300 ease-out transition-all translate-y-full">
-                    Our goals are to become the leading provider of cross-border payment solutions and to help individuals and businesses around the world conduct their transactions with ease and confidence.
+                    {{ $page_texts->where('title', 'About Goal')->first()->content ?? ''}}
                 </div>
             </div>
         </div>
     </section>
     <section class="flex flex-col mx-5 lg:mx-28 mb-10 mt-20 lg:mt-32">
         <div>
-            <x-section-title><span class="text-primary">B</span>oarding Members</x-section-title>
+            <x-section-title><span class="text-primary">T</span>eam Members</x-section-title>
             <x-section-subtitle>Meet our team of Experts</x-section-subtitle>
         </div>
         <div class="grid grid-col-1 lg:grid-cols-4 gap-8 mt-20">
-            <x-about-team name="Bishoy" text="CEO of PAYCO" img="bishoy.jpg"></x-about-team>
-            <x-about-team name="Dr. Moenes Iskarous" text="" img="moenes.png"></x-about-team>
+            <x-about-team name="Bishoy" text="Founder & CEO" img="bishoy.jpg" contentClasses="lg:col-start-2"></x-about-team>
+            <x-about-team name="Khaled Sherif" text="Founder & CTO" img="khaled.jpg"></x-about-team>
+        </div>
+    </section>
+    <section class="flex flex-col mx-5 lg:mx-28 mb-10 mt-20 lg:mt-32">
+        <div>
+            <x-section-title><span class="text-primary">A</span>dvisor Report Members</x-section-title>
+            <x-section-subtitle>Meet our team of Experts</x-section-subtitle>
+        </div>
+        <div class="grid grid-col-1 lg:grid-cols-4 gap-8 mt-20">
+            <x-about-team name="Dr. Moenes Iskarous" text="" img="moenes.png" contentClasses="lg:col-start-2"></x-about-team>
             <x-about-team name="Dr. Mattia Rattaggi" text="" img="mattia_portrait.jpg"></x-about-team>
-            <x-about-team name="Khaled Serif" text="CTO" img="khaled.jpg"></x-about-team>
         </div>
     </section>
     <div class="min-h-[100px] lg:min-h-[300px]"></div>

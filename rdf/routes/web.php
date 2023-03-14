@@ -31,7 +31,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::resource('posts', PostController::class, ['as' => 'admin']);
+Route::resource('/admin/posts', PostController::class, ['as' => 'admin']);
 Route::get('/admin/feedback', [AdminController::class, 'feeds']);
 Route::resource('/admin/page_texts', PageTextController::class, ['as' => 'admins']);
 Route::middleware('auth')->group(function () {

@@ -7,19 +7,24 @@
         </div>
         <div class="text-center px-3 lg:px-80">
             <h1 class="mt-5 text-white text-lg lg:text-5xl font-light leading-[40px] lg:leading-[80px] ">What we Offer?</h1>
-            <p class="mt-5 lg:text-xl text-[#C0C0C0] font-light">Payco offers a range of products and services to meet the diverse needs of individuals and businesses. Our digital wallet and secure platform make it easy to send money internationally, issue letters of credit, and conduct transactions with confidence.</p>
+            <p class="mt-5 lg:text-xl text-[#C0C0C0] font-light">Payco offers a range of products and services to meet the diverse needs of <span class="hidden">individuals and </span>businesses. Our digital wallet and secure platform make it easy to send money internationally, issue letters of credit, and conduct transactions with confidence.</p>
+        </div>
+        <div class="text-center px-3 lg:px-80 my-5">
+            <img src="/images/products.jpg" alt="Products" />
         </div>
         <div class="flex items-center justify-center lg:flex-row lg:gap-10 lg:mt-20 mt-10 overflow-hidden relative">
-            <x-primary-button contentClasses="z-10 border-primary/40 -mr-8 lg:-mr-12 pl-5 pr-10 lg:pr-10 text-white bg-gradient-to-b from-primary to-[#DA291C] hover:text-white hover:bg-white/[0.13]">
+            <!-- contentClasses="z-10 border-primary/40 -mr-8 lg:-mr-12 pl-5 pr-10 lg:pr-10 text-white bg-gradient-to-b from-primary to-[#DA291C] hover:text-white hover:bg-white/[0.13]"> -->
+            <x-primary-button contentClasses="hidden z-10 border-primary/40 -mr-8 lg:-mr-12 pl-5 pr-10 lg:pr-10 text-white bg-gradient-to-b from-primary to-[#DA291C] hover:text-white hover:bg-white/[0.13]">
                 <a href="/contact-us" class="uppercase font-medium text-xs lg:text-lg">Personal Services</a>
             </x-primary-button>
-            <x-primary-button contentClasses="border-primary/40 lg:-ml-14 pr-5 pl-10 lg:pl-20 text-primary/40 bg-[#00000000] hover:text-white hover:bg-white/[0.13]">
+            <!-- contentClasses="border-primary/40 lg:-ml-14 pr-5 pl-10 lg:pl-20 text-primary/40 bg-[#00000000] hover:text-white hover:bg-white/[0.13]"> -->
+            <x-primary-button contentClasses="border-primary/40 pl-5 text-white bg-gradient-to-b from-primary to-[#DA291C] hover:text-white hover:bg-white/[0.7]">
                 <a href="/contact-us" class="uppercase font-medium text-xs lg:text-lg">BUSINESS Services</a>
             </x-primary-button>
 
         </div>
 
-        <section class="flex flex-col-reverse lg:flex-row lg:gap-10 pr-3 py-16 relative">
+        <section class="hidden flex flex-col-reverse lg:flex-row lg:gap-10 pr-3 py-16 relative">
             <div class="absolute right-0 top-5">
                 <svg class="w-[101px] lg:w-[251px] h-[16px] lg:h-[41px]" viewBox="0 0 251 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M264.5 40.0002L244.243 40.0001C239.169 40 234.285 38.0716 230.58 34.6054L205.769 11.3947C202.064 7.92841 197.179 5.99998 192.106 5.99998L42 6" stroke="white" stroke-opacity="0.32"/>
@@ -65,7 +70,7 @@
 
         </section>
 
-        <section class="flex flex-col lg:flex-row lg:gap-10 pl-5 py-16 relative">
+        <section class="hidden flex flex-col lg:flex-row lg:gap-10 pl-5 py-16 relative">
             <div class="absolute left-0 top-5">
                 <svg class="w-[101px] lg:w-[251px] h-[16px] lg:h-[41px]" viewBox="0 0 253 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M-11.5 40.0002L8.75701 40.0001C13.8308 40.0001 18.7149 38.0716 22.4201 34.6054L47.2312 11.3947C50.9364 7.92844 55.8206 6.00001 60.8944 6.00001L211 6.00003" stroke="#F4B554" stroke-opacity="0.5"/>
@@ -107,11 +112,11 @@
             </div>
 
         </section>
-        <section>
-            <div class="lg:grid lg:grid-cols-4 gap-5 lg:gap-10 items-center px-5 lg:px-40">
+        <section class="lg:px-80 py-10 lg:py-40">
+            <div class="lg:grid lg:grid-cols-4 gap-5 lg:gap-10 items-center px-5">
                 <p class="lg:col-span-3 text-sm font-medium text-white/70 text-center lg:text-start lg:text-lg capitalize">All of our products and services are regulated by the trusted financial system of Switzerland, ensuring the security and reliability of your transactions.
 Get Started with a payco Business Account</p>
-                <x-primary-button contentClasses="w-full mt-5 lg:mt-0 lg:h-3/4 border-primary bg-white/0 text-primary hover:text-white">
+                <x-primary-button contentClasses="w-full mt-5 lg:mt-0 lg:h-3/4 border-primary bg-white/0 text-primary hover:text-white lg:px-5">
                     <a href="/register" class=" uppercase font-medium lg:text-lg">Get Started</a>
                 </x-primary-button>
             </div>

@@ -70,31 +70,31 @@
             </div>
             <div class="grid grid-cols-2 gap-7 lg:grid-cols-12">
                 <div class="col-span-2 lg:col-span-3 lg:overflow-y-hidden lg:whitespace-normal overflow-y-auto relative whitespace-nowrap">
-                    <x-primary-button contentClasses="select-category lg:w-full mt-4 z-10 border-white/10 border-[1px] lg:px-6 lg:py-5 text-white hover:bg-gradient-to-b from-primary to-[#DA291C] bg-white/4 active-category">
+                    <x-primary-button slug="payments" contentClasses="select-category lg:w-full mt-4 z-10 border-white/10 border-[1px] lg:px-6 lg:py-5 text-white hover:bg-gradient-to-b from-primary to-[#DA291C] bg-white/4 active-category">
                         <a href="#" class="flex items-center uppercase font-medium text-xs lg:text-base ">
                         <img class="w-[22px] h-[22px] lg:w-[31px] lg:h-[31px] mr-2" src="/images/icon-payment.png" alt="">
                         Payments
                         </a>
                     </x-primary-button>
-                    <x-primary-button contentClasses="select-category lg:w-full mt-4 z-10 border-white/10 border-[1px] lg:px-6 lg:py-5 text-white hover:bg-gradient-to-b from-primary to-[#DA291C] bg-white/4">
+                    <x-primary-button slug="fintech" contentClasses="select-category lg:w-full mt-4 z-10 border-white/10 border-[1px] lg:px-6 lg:py-5 text-white hover:bg-gradient-to-b from-primary to-[#DA291C] bg-white/4">
                         <a href="#" class="flex items-center uppercase font-medium text-xs lg:text-base ">
                         <img class="w-[22px] h-[22px] lg:w-[31px] lg:h-[31px] mr-2" src="/images/icon-fintech.png" alt="">
                         Fintech
                         </a>
                     </x-primary-button>
-                    <x-primary-button contentClasses="select-category lg:w-full mt-4 z-10 border-white/10 border-[1px] lg:px-6 lg:py-5 text-white hover:bg-gradient-to-b from-primary to-[#DA291C] bg-white/4">
+                    <x-primary-button slug="financial-industry" contentClasses="select-category lg:w-full mt-4 z-10 border-white/10 border-[1px] lg:px-6 lg:py-5 text-white hover:bg-gradient-to-b from-primary to-[#DA291C] bg-white/4">
                         <a href="#" class="flex items-center uppercase font-medium text-xs lg:text-base ">
                         <img class="w-[22px] h-[22px] lg:w-[31px] lg:h-[31px] mr-2" src="/images/icon-financial.png" alt="">
                         Financial Industry
                         </a>
                     </x-primary-button>
-                    <x-primary-button contentClasses="select-category lg:w-full mt-4 z-10 border-white/10 border-[1px] lg:px-6 lg:py-5 text-white hover:bg-gradient-to-b from-primary to-[#DA291C] bg-white/4">
+                    <x-primary-button slug="company-news" contentClasses="select-category lg:w-full mt-4 z-10 border-white/10 border-[1px] lg:px-6 lg:py-5 text-white hover:bg-gradient-to-b from-primary to-[#DA291C] bg-white/4">
                         <a href="/contact-us" class="flex items-center uppercase font-medium text-xs lg:text-base ">
                         <img class="w-[22px] h-[22px] lg:w-[31px] lg:h-[31px] mr-2" src="/images/icon-news.png" alt="">
                         Company News
                         </a>
                     </x-primary-button>
-                    <x-primary-button contentClasses="select-category lg:w-full mt-4 z-10 border-white/10 border-[1px] lg:px-6 lg:py-5 text-white hover:bg-gradient-to-b from-primary to-[#DA291C] bg-white/4">
+                    <x-primary-button slug="thought-leadership" contentClasses="select-category lg:w-full mt-4 z-10 border-white/10 border-[1px] lg:px-6 lg:py-5 text-white hover:bg-gradient-to-b from-primary to-[#DA291C] bg-white/4">
                         <a href="/contact-us" class="flex items-center uppercase font-medium text-xs lg:text-base ">
                         <svg class="w-[22px] h-[22px] lg:w-[31px] lg:h-[31px] mr-2" viewBox="0 0 31 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20.3333 32.9999H10.6667M20.3333 32.9999V18.0657C20.3333 17.7828 20.2315 17.5115 20.0502 17.3115C19.8689 17.1114 19.623 16.999 19.3667 16.999H11.6333C11.377 16.999 11.1311 17.1114 10.9498 17.3115C10.7685 17.5115 10.6667 17.7828 10.6667 18.0657V32.9999M20.3333 32.9999H29.0333C29.2897 32.9999 29.5356 32.8875 29.7169 32.6874C29.8982 32.4874 30 32.2161 30 31.9332V27.844C30 27.5611 29.8982 27.2898 29.7169 27.0898C29.5356 26.8897 29.2897 26.7773 29.0333 26.7773H21.3C21.0436 26.7773 20.7977 26.8897 20.6165 27.0898C20.4352 27.2898 20.3333 27.5611 20.3333 27.844V32.9999ZM10.6667 32.9999V24.2883C10.6667 24.0054 10.5648 23.7341 10.3835 23.534C10.2023 23.334 9.95638 23.2216 9.7 23.2216H1.96667C1.71029 23.2216 1.46442 23.334 1.28313 23.534C1.10184 23.7341 1 24.0054 1 24.2883V31.9332C1 32.2161 1.10184 32.4874 1.28313 32.6874C1.46442 32.8875 1.71029 32.9999 1.96667 32.9999H10.6667Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

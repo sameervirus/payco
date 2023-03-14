@@ -1,4 +1,9 @@
-<x-guest-layout>
+<x-admin-layout>
+    <div class="bg-gray-800 pt-3">
+        <div class="rounded-tl-3xl bg-gradient-to-r from-blue-900 to-gray-800 p-4 shadow text-2xl text-white">
+            <h1 class="font-bold pl-2">{{ isset($pageText) ? $pageText->title : 'Create Page Text' }}</h1>
+        </div>
+    </div>
     <div class="mx-auto lg:w-1/2">
         <h1 class="text-2xl font-semibold">{{ isset($pageText) ? 'Edit' : 'Create' }} Page Text</h1>
 
@@ -30,4 +35,4 @@
             </div>
         </form>
     </div>
-</x-guest-layout>
+</x-admin-layout>

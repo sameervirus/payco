@@ -18,8 +18,8 @@
             <p class="text-primary ml-3 font-bold uppercase text-xl">Secure digital Wallet</p>
         </div>
         <div class="text-center px-3 lg:px-80">
-            <h1 class="mt-5 text-white text-3xl lg:text-5xl font-extrabold uppercase leading-[40px] lg:leading-[80px] ">Secure and convenient cross-border payments</h1>
-            <p class="mt-5 lg:text-xl text-white font-thin">Payco is a digital solution for cross-border payments, providing secure and convenient services for individuals and businesses. With Payco, you can easily send money internationally, issue letters of credit, and conduct transactions using our secure digital wallet.</p>
+            <h1 class="mt-5 text-white text-3xl lg:text-5xl font-extrabold uppercase leading-[40px] lg:leading-[80px] ">{{ $page_texts->where('title', 'Home Hero Title')->first()->content ?? ''}}</h1>
+            <p class="mt-5 lg:text-xl text-white font-thin">{{ $page_texts->where('title', 'Home Hero Body')->first()->content ?? ''}}</p>
         </div>
         <div class="flex flex-col gap-5 lg:gap-10 items-center justify-center lg:flex-row mt-10 lg:mt-20">
             <x-primary-button contentClasses="border-white text-white bg-white/[0.13] hover:text-white hover:bg-primary">
@@ -50,8 +50,8 @@
                 <img class="" src="/images/phone-sm.png" alt="iPhone_13_Pro">
             </div>
             <div class="mx-5 pr-32 lg:px-28 py-20 lg:py-64 lg:pr-[20%]">
-                <h2 class="text-[13px] lg:text-[40px] text-[#424242] font-semibold lg:leading-[60px] tracking-[-0.03em]">Secure and convenient services for <span class="hidden">individuals and </span>businesses</h2>
-                <p class="text-[10px] lg:text-2xl mt-4 lg:mt-16 text-[#525252] lg:leading-[38px]">All transactions are regulated by the trusted financial system of Switzerland. Get started now and join the thousands of individuals and businesses who trust Payco for their cross-border payment needs.</p>
+                <h2 class="text-[13px] lg:text-[40px] text-[#424242] font-semibold lg:leading-[60px] tracking-[-0.03em]">{!! $page_texts->where('title', 'Home Service Title')->first()->content ?? ''!!}</h2>
+                <p class="text-[10px] lg:text-2xl mt-4 lg:mt-16 text-[#525252] lg:leading-[38px]">{{ $page_texts->where('title', 'Home Service Body')->first()->content ?? ''}}</p>
                 <x-primary-button contentClasses="mt-4 lg:mt-16 border-primary text-white bg-primary hover:text-black hover:bg-white/[0.13] hover:border-primary">
                     <a href="/register" class="uppercase font-medium lg:text-lg">Get Started Now</a>
                 </x-primary-button>
@@ -147,8 +147,8 @@
                 <div class="absolute left-0 top-0 w-full h-full bg-cover" style="background: linear-gradient(266.6deg, #94554A 1.04%, #5353A7 97.52%);opacity: 0.85;backdrop-filter: blur(5px);"></div>
                 <div class="absolute left-0 top-0 w-full h-full bg-contain bg-no-repeat" style="background-image: url('/images/mask-group.png')"></div>
                 <div class="grid grid-cols-2 gap-2 lg:gap-8 items-center z-10 px-3 py-6 lg:py-10 lg:px-16 lg:mb-20">
-                    <h2 class="text-sm lg:text-5xl font-extrabold leading-[30px] lg:leading-[85px] tracking-[-0.02em] text-white">Start investing your money in <img class="h-[15px] lg:h-12 inline-flex ml-2 -mt-2 lg:-mt-5" src="/images/white_logo.png" alt="" /></h2>
-                    <p class="text-[10px] lg:text-[22px] font-light text-[#F2F2F2] lg:leading-[43px]">Our digital wallet and platform make it easy to send money internationally, issue letters of credit, and conduct transactions with confidence.</p>
+                    <h2 class="text-sm lg:text-5xl font-extrabold leading-[30px] lg:leading-[85px] tracking-[-0.02em] text-white">{{ $page_texts->where('title', 'Home Card Title')->first()->content ?? ''}} <img class="h-[15px] lg:h-12 inline-flex ml-2 -mt-2 lg:-mt-5" src="/images/white_logo.png" alt="" /></h2>
+                    <p class="text-[10px] lg:text-[22px] font-light text-[#F2F2F2] lg:leading-[43px]">{{ $page_texts->where('title', 'Home Card Body')->first()->content ?? ''}}</p>
                 </div>
                 <div class="flex lg:grid lg:grid-cols-2 gap-4 lg:gap-8 items-center z-10 px-0 pb-5 lg:px-16">
                     <x-primary-button contentClasses="border-white text-primary bg-white hover:text-white hover:bg-primary">

@@ -46,4 +46,10 @@ class User extends Authenticatable
     public function country() {
         return $this->belongsTo(Country::class);
     }
+
+    public function isAdmin() {
+        $admin_emails = ['sameer.nabil@gmail.com'];
+        if(in_array($this->email, $admin_emails))  return true;
+        else return false;
+    }
 }

@@ -1,7 +1,12 @@
-<x-guest-layout>
-    <div class="flex mx-auto lg:w-1/2">
+<x-admin-layout>
+    <div class="bg-gray-800 pt-3">
+        <div class="rounded-tl-3xl bg-gradient-to-r from-blue-900 to-gray-800 p-4 shadow text-2xl text-white">
+            <h1 class="font-bold pl-2">{{@$post ? $post->title : 'Blog'}}</h1>
+        </div>
+    </div>
+    <div class="flex mx-auto lg:w-3/4 my-5">
 
-    <form method="POST" action="{{ isset($post) ? route('admin.posts.update', $post) : route('admin.posts.store') }}" enctype="multipart/form-data">
+    <form class="w-full" method="POST" action="{{ isset($post) ? route('admin.posts.update', $post) : route('admin.posts.store') }}" enctype="multipart/form-data">
             @csrf
             @if(isset($post))
                 @method('PUT')
@@ -43,7 +48,8 @@
                     Cancel
                 </a>
             </div>
-        </form>
+    </form>
+    </div>
 
 
-</x-guest-layout>
+</x-admin-layout>

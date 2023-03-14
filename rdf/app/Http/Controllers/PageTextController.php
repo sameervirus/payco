@@ -9,7 +9,7 @@ class PageTextController extends Controller
 {
     public function index()
     {
-        $pageTexts = PageText::all();
+        $pageTexts = PageText::orderBy('title')->get();
 
         return view('admins.page_texts.index', compact('pageTexts'));
     }

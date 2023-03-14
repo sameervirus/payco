@@ -1,7 +1,9 @@
-<x-guest-layout>
-    <link rel="stylesheet" href="//cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script src="//cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
+<x-admin-layout>
+    <div class="bg-gray-800 pt-3">
+        <div class="rounded-tl-3xl bg-gradient-to-r from-blue-900 to-gray-800 p-4 shadow text-2xl text-white">
+            <h1 class="font-bold pl-2">Website Feed Back</h1>
+        </div>
+    </div>
     <div class="mx-5">
         <div class="w-full max-w-full">
         <div class="relative flex flex-col min-w-0 break-words bg-white border-0 shadow-soft-xl rounded-2xl bg-clip-border">
@@ -45,4 +47,4 @@
     <script>
         $('.table').dataTable();
     </script>
-</x-guest-layout>
+</x-admin-layout>

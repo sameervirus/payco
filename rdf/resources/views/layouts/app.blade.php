@@ -14,7 +14,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
         <!-- Scripts -->
-        <script src="https://cdn.tailwindcss.com"></script>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="antialiased bg-black font-sans overflow-x-hidden relative">
@@ -22,38 +21,38 @@
 
             <div id="content-warp" class="" >
                 <div id="bg-colors">
-                    <div class="{{ in_array(Route::currentRouteName(), ['invset']) ? 'hidden' : '' }}">
+                    <div class="{{ in_array(Route::currentRouteName(), ['invset']) ? 'hidden lg:hidden' : '' }}">
                         <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-0 -z-20 ">
                     </div>
-                    <div class="{{ in_array(Route::currentRouteName(), ['invset', 'contacts']) ? 'hidden' : '' }}">
+                    <div class="{{ in_array(Route::currentRouteName(), [ 'invset', 'contacts']) ? 'hidden lg:hidden' : '' }}">
                         <img src="/images/rectangle_9534.png" alt="" class="absolute top-40 -z-20 ">
                     </div>
-                    <div class="{{ in_array(Route::currentRouteName(), []) ? 'hidden' : '' }}">
+                    <div class="{{ in_array(Route::currentRouteName(), []) ? 'hidden lg:hidden' : '' }}">
                         <img src="/images/rectangle_9532.png" alt="" class="absolute right-0 top-52 -z-20 ">
                     </div>
-                    <div class="{{ in_array(Route::currentRouteName(), ['invset', 'contacts']) ? 'hidden' : '' }}">
+                    <div class="{{ in_array(Route::currentRouteName(), ['invset', 'contacts']) ? 'hidden lg:hidden' : '' }}">
                         <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-[1000px] -z-20 ">
                     </div>
-                    <div class="{{ in_array(Route::currentRouteName(), ['products', 'invset', 'contacts', 'blog']) ? 'hidden' : '' }}">
+                    <div class="{{ in_array(Route::currentRouteName(), ['products', 'invset', 'contacts', 'blog']) ? 'hidden lg:hidden' : '' }}">
                         <img src="/images/rectangle_9534.png" alt="" class="absolute top-[1300px] -z-20 ">
                     </div>
-                    <!-- <div class="{{ in_array(Route::currentRouteName(), ['products', 'invset', 'contacts']) ? 'hidden' : '' }}"> -->
-                    <div class="hidden lg:block {{ in_array(Route::currentRouteName(), ['products', 'invset', 'contacts']) ? 'hidden' : '' }}">
+                    <!-- <div class="{{ in_array(Route::currentRouteName(), ['products', 'invset', 'contacts']) ? 'hidden lg:hidden' : '' }}"> -->
+                    <div class="hidden lg:block {{ in_array(Route::currentRouteName(), ['products', 'invset', 'contacts']) ? 'hidden lg:hidden' : '' }}">
                         <img src="/images/rectangle_9532.png" alt="" class="absolute right-0 top-[1300px] -z-20 ">
                     </div>
-                    <div class="{{ in_array(Route::currentRouteName(), ['products', 'invset', 'contacts']) ? 'hidden' : '' }}">
+                    <div class="{{ in_array(Route::currentRouteName(), ['products', 'invset', 'contacts']) ? 'hidden lg:hidden' : '' }}">
                         <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-[1500px] -z-20 ">
                     </div>
                     <!-- <div class="{{ in_array(Route::currentRouteName(), ['about', 'products', 'invset', 'contacts', 'blog']) ? 'hidden' : '' }}"> -->
-                    <div class="hidden {{ in_array(Route::currentRouteName(), ['home','about', 'products', 'invset', 'contacts', 'blog']) ? 'hidden' : '' }}">
+                    <div class="hidden {{ in_array(Route::currentRouteName(), ['home','about', 'products', 'invset', 'contacts', 'blog']) ? 'hidden lg:hidden' : '' }}">
                         <img src="/images/rectangle_9534.png" alt="" class="absolute top-[1800px] -z-20 ">
                     </div>
                     <!-- <div class="{{ in_array(Route::currentRouteName(), ['about', 'products', 'invset', 'contacts', 'blog']) ? 'hidden' : '' }}"> -->
-                    <div class="hidden lg:block {{ in_array(Route::currentRouteName(), ['about', 'products', 'invset', 'contacts', 'blog']) ? 'hidden' : '' }}">
+                    <div class="hidden lg:block {{ in_array(Route::currentRouteName(), ['about', 'products', 'invset', 'contacts', 'blog']) ? 'hidden lg:hidden' : '' }}">
                         <img src="/images/rectangle_9532.png" alt="" class="absolute right-0 top-[1600px] -z-20 ">
                     </div>
                     <!-- <div class="{{ in_array(Route::currentRouteName(), ['about', 'products', 'invset', 'contacts', 'blog']) ? 'hidden' : '' }}"> -->
-                    <div class="hidden lg:block {{ in_array(Route::currentRouteName(), ['about', 'products', 'invset', 'contacts', 'blog']) ? 'hidden' : '' }}">
+                    <div class="hidden lg:block {{ in_array(Route::currentRouteName(), ['about', 'products', 'invset', 'contacts', 'blog']) ? 'hidden lg:hidden' : '' }}">
                         <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-[2000px] -z-20 ">
                     </div>
 
@@ -95,7 +94,7 @@
                         </div>
                         <div class="text-center mt-5">
                             <x-primary-button contentClasses="border-[#F4B554] text-[#F4B554]">
-                                <a href="/invset" class="uppercase font-medium text-lg ">Invest With Payco</a>
+                                <a href="/invset" class="uppercase font-medium text-lg ">Invest In Payco</a>
                             </x-primary-button>
                         </div>
 
@@ -113,7 +112,7 @@
                                 <a href="/contact-us" class="nav-item {{ (request()->is('contact-us')) ? 'active' : '' }} hover:text-primary">Contact Us</a>
                             </div>
                             <x-primary-button contentClasses="hidden lg:block lg:px-6 border-[#F4B554] text-[#F4B554] hover:text-white hover:bg-primary hover:border-primary">
-                                <a href="/invset" class="uppercase font-medium text-lg ">Invest With Payco</a>
+                                <a href="/invset" class="uppercase font-medium text-lg ">Invest In Payco</a>
                             </x-primary-button>
                             <div class="hidden lg:hidden items-center justify-between">
                                 <img src="/images/ic_baseline-account-circle.png" alt="avatar" class="">
@@ -145,11 +144,11 @@
                 <footer class="relative px-5 py-10 2xl:px-20 lg:px-8 md:px-6 lg:py-32">
                     <div class="w-full h-full absolute top-0 left-0 -z-10" style="background-image: url('/images/rectangle_9540.png');background-repeat: no-repeat;"></div>
                     <div class="mx-5 lg:mx-8">
-                        <h2 class="text-xl lg:text-[50px] font-extralight  text-white">Make your transactions safely with Payco!</h2>
+                        <h2 class="text-xl lg:text-[50px] font-extralight  text-white">{{ $page_texts->where('title', 'Footer Title')->first()->content ?? ''}}</h2>
                         <div class="grid grid-col-4 lg:grid-cols-12 gap-4 lg:gap-8 z-10 mt-10 lg:mt-20">
                             <div class="col-span-4 focus:outline-none logo ps-3 md:ps-0 lg:mx-0">
                                 <img class="mb-4 lg:mb-10 h-8 lg:h-[76px]" src="/images/logo.png" alt="Payco" />
-                                <p class="text-xs lg:text-lg text-white/60 lg:pr-6">Payco is a digital solution for cross-border payments, providing secure and convenient services for individuals and businesses. With Payco, you can easily send money internationally, issue letters of credit, and conduct transactions using our secure digital wallet.</p>
+                                <p class="text-xs lg:text-lg text-white/60 lg:pr-6">{{ $page_texts->where('title', 'Footer Body')->first()->content ?? ''}}</p>
                             </div>
                             <div class="col-span-2 lg:col-span-3 text-white mt-5 lg:mt-0">
                                 <ul class="lg:pl-20 space-y-3 lg:space-y-5">
