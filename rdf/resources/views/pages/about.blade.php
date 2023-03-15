@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div>
-                <img class="w-100 mt-10 lg:mt-0" src="/images/group_22.png" alt="about">
+                <img class="w-100 mt-10 lg:mt-0" src="/images/group_21.png" alt="about">
             </div>
             <div class="lg:hidden text-center mt-10">
                 <x-primary-button contentClasses="px-10 border-white text-white bg-white/[0.13] hover:text-white hover:bg-primary">
