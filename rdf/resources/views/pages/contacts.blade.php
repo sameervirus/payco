@@ -9,8 +9,8 @@
                     </svg>
                     <p class="text-primary font-bold text-sm lg:text-xl ml-2 uppercase">Contact us</p>
                 </div>
-                <h2 class="text-white mt-8 lg:mt-12 text-center lg:text-start text-2xl lg:text-[50px] font-extralight tracking-[-0.01em] leading-[32px] lg:leading-[75px]">We'd love to hear from you</h2>
-                <p class="text-white/[0.70] mt-2 lg:mt-5 text-center lg:text-start text-[13px] lg:text-[18px] font-light lg:font-normal tracking-[-0.01em]">Need a help? We are always here for you, let us know your inquiry. We'd love to hear from you.</p>
+                <h2 class="text-white mt-8 lg:mt-12 text-center lg:text-start text-2xl lg:text-[50px] font-extralight tracking-[-0.01em] leading-[32px] lg:leading-[75px]">{{ $page_texts->where('title', 'Contact Us Hero Title')->first()->content ?? ''}}</h2>
+                <p class="text-white/[0.70] mt-2 lg:mt-5 text-center lg:text-start text-[13px] lg:text-[18px] font-light lg:font-normal tracking-[-0.01em]">{{ $page_texts->where('title', 'Contact Us Hero Body')->first()->content ?? ''}}</p>
             </div>
             <div class="">
                 <form method="POST" action="{{ route('feedback') }}" id="feedForm">

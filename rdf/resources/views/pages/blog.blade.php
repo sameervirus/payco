@@ -8,8 +8,8 @@
                 <div class="flex">
                     <p class="text-primary font-bold text-sm lg:text-xl ml-2 uppercase">The Payco Blog</p>
                 </div>
-                <h2 class="w-1/2 lg:w-full text-white mt-8 lg:mt-12 text-2xl lg:text-[50px] font-extralight tracking-[-0.01em] leading-[32px] lg:leading-[75px]">Welcome to <br/>the Payco Blog</h2>
-                <p class="w-2/3 lg:w-full text-white/[0.70] mt-5 lg:mt-5 text-[13px] lg:text-[18px] font-light lg:font-normal tracking-[-0.01em]">Here, you will find articles, news, and other content related to payments, fintech, and the financial industry. Whether you're a business owner, financial professional, or simply interested in staying up-to-date with the latest trends, we hope you'll find something of value here.</p>
+                <h2 class="w-1/2 lg:w-full text-white mt-8 lg:mt-12 text-2xl lg:text-[50px] font-extralight tracking-[-0.01em] leading-[32px] lg:leading-[75px]">{!! $page_texts->where('title', 'Blog Hero Title')->first()->content ?? '' !!}</h2>
+                <p class="w-2/3 lg:w-full text-white/[0.70] mt-5 lg:mt-5 text-[13px] lg:text-[18px] font-light lg:font-normal tracking-[-0.01em]">{!! $page_texts->where('title', 'Blog Hero Body')->first()->content ?? '' !!}</p>
                 <div class="flex my-7 lg:my-10 mx-10">
                     <x-primary-button contentClasses="border-primary w-full text-center py-2 text-primary bg-black/[0.13] hover:text-white hover:bg-primary">
                         <a href="#" class="font-medium lg:text-lg">View All Blogs</a>

@@ -6,8 +6,8 @@
             <p class="text-primary ml-3 font-bold uppercase lg:text-xl">Products and Services</p>
         </div>
         <div class="text-center px-3 lg:px-80">
-            <h1 class="mt-5 text-white text-lg lg:text-5xl font-light leading-[40px] lg:leading-[80px] ">What we Offer?</h1>
-            <p class="mt-5 lg:text-xl text-[#C0C0C0] font-light">Payco offers a range of products and services to meet the diverse needs of <span class="hidden">individuals and </span>businesses. Our digital wallet and secure platform make it easy to send money internationally, issue letters of credit, and conduct transactions with confidence.</p>
+            <h1 class="mt-5 text-white text-lg lg:text-5xl font-light leading-[40px] lg:leading-[80px] ">{{ $page_texts->where('title', 'Products Hero Title')->first()->content ?? ''}}</h1>
+            <p class="mt-5 lg:text-xl text-[#C0C0C0] font-light">{!! $page_texts->where('title', 'Products Hero Body')->first()->content ?? '' !!}</p>
         </div>
         <div class="text-center px-3 lg:px-80 my-5">
             <img src="/images/products.jpg" alt="Products" />
@@ -112,15 +112,17 @@
             </div>
 
         </section>
-        <section class="lg:px-80 py-10 lg:py-40">
-            <div class="lg:grid lg:grid-cols-4 gap-5 lg:gap-10 items-center px-5">
-                <p class="lg:col-span-3 text-sm font-medium text-white/70 text-center lg:text-start lg:text-lg capitalize">All of our products and services are regulated by the trusted financial system of Switzerland, ensuring the security and reliability of your transactions.
-Get Started with a payco Business Account</p>
-                <x-primary-button contentClasses="w-full mt-5 lg:mt-0 lg:h-3/4 border-primary bg-white/0 text-primary hover:text-white lg:px-5">
-                    <a href="/register" class=" uppercase font-medium lg:text-lg">Get Started</a>
-                </x-primary-button>
+        <section class="lg:px-80 py-10 lg:py-28">
+            <div class="lg:grid lg:grid-cols-12 gap-5 lg:gap-10 items-center px-5">
+                <p class="lg:col-span-8 text-sm font-medium text-white/70 text-center lg:text-start lg:text-lg capitalize">
+                    {{ $page_texts->where('title', 'Products Card Body')->first()->content ?? ''}}
+                </p>
+                <div class="lg:col-span-4">
+                    <x-primary-button contentClasses="w-full mt-5 lg:mt-0 lg:h-3/4 border-primary bg-white/0 text-primary hover:text-white lg:px-5">
+                        <a href="/register" class=" uppercase font-medium lg:text-lg">Get Started</a>
+                    </x-primary-button>
+                </div>
             </div>
         </section>
     </div>
-    <div class="min-h-[100px] lg:min-h-[300px]"></div>
 </x-app-layout>
