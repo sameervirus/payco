@@ -15,7 +15,7 @@
 
             <div class="mb-4">
                 <label for="title" class="block text-gray-700 font-medium mb-2">Title</label>
-                <input type="text" name="title" id="title" class="form-input w-full @error('title') border-red-500 @enderror" value="{{ isset($pageText) ? $pageText->title : old('title') }}" required>
+                <input disabled type="text" name="title" id="title" class="form-input w-full @error('title') border-red-500 @enderror" value="{{ isset($pageText) ? $pageText->title : old('title') }}">
                 @error('title')
                     <p class="text-red-500 mt-1">{{ $message }}</p>
                 @enderror

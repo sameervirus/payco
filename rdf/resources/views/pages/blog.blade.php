@@ -24,7 +24,7 @@
     <section class="bg-black/60 py-20">
         <div class="flex flex-col mx-5 lg:mx-28">
             <div class="flex items-center py-10">
-                <h2 class="head_line relative font-bold text-xl lg:text-[32px] text-white">Recent blogs</h2>
+                <h2 class="head_line relative font-bold text-xl lg:text-[32px] text-white z-10">Recent blogs</h2>
                 <svg class="w-[6px] h-[6px] lg:w-3 lg:h-3 ml-1 mt-3 lg:ml-2 lg:mt-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none">
                     <circle cx="6" cy="6" r="6" fill="url(#paint0_linear_123_2830)"/>
                     <defs>

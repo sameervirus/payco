@@ -74,7 +74,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(220 79 59);
+    background-color: rgb(255 0 0);
 }
 
 .nav-item {
@@ -83,7 +83,7 @@
 
 .nav-item.active {
     --tw-text-opacity: 1;
-    color: rgb(220 79 59 / var(--tw-text-opacity));
+    color: rgb(255 0 0 / var(--tw-text-opacity));
 }
 
 .nav-item.active::after,
@@ -92,7 +92,7 @@
     width: 6px;
     height: 6px;
     border-radius: 100%;
-    background-color: rgb(220 79 59 / var(--tw-text-opacity));
+    background-color: rgb(255 0 0 / var(--tw-text-opacity));
     display: block;
     position: absolute;
     top: 35px;
@@ -101,14 +101,14 @@
 
 .abouts .active {
     --tw-text-opacity: 1;
-    color: rgb(220 79 59 / var(--tw-text-opacity));
+    color: rgb(255 0 0 / var(--tw-text-opacity));
 }
 
 .head_line::after {
     content: " ";
     width: 70px;
     height: 7px;
-    background-color: rgb(220 79 59 / var(--tw-text-opacity));
+    background-color: rgb(255 0 0 / var(--tw-text-opacity));
     position: absolute;
     bottom: 2px;
     left: 0;
@@ -130,7 +130,7 @@ select {
 }
 
 [type="submit"].bg-primary-class {
-    background-color: rgb(220 79 59 / var(--tw-text-opacity));
+    background-color: rgb(255 0 0 / var(--tw-text-opacity));
 }
 
 [type="submit"].bg-primary-class:disabled {
@@ -138,7 +138,7 @@ select {
 }
 
 .error {
-    color: rgb(220 79 59);
+    color: rgb(255 0 0);
 }
 
 #passwordForm .valid {

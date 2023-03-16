@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-cf45f230.css",
+    "file": "assets/app-51f5b263.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -9,7 +9,7 @@
     "src": "resources/css/select-arrow.png"
   },
   "resources/js/app.js": {
-    "file": "assets/app-50dbfe1b.js",
+    "file": "assets/app-4b33f402.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }

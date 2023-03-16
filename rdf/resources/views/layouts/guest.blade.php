@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>{{ config('app.name', 'Payco') }}</title>
         <link rel="icon" type="image/png" href="http://www.payco.technodyna.com/images/favicon.png">
 
         <!-- Fonts -->

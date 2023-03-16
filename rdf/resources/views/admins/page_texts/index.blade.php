@@ -7,7 +7,7 @@
     <div class="lg:mx-20 my-10">
         <div class="flex justify-between items-center mb-6">
             <h1 class="text-2xl font-semibold">Page Texts</h1>
-            <a href="{{ route('admins.page_texts.create') }}" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">Create New</a>
+            <!-- <a href="{{ route('admins.page_texts.create') }}" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">Create New</a> -->
         </div>
 
         <table class="table w-full border-collapse" datatable>
@@ -25,11 +25,6 @@
                         <td class="py-2 px-4">{{ $pageText->content }}</td>
                         <td class="py-2 px-4 text-right flex">
                             <a href="{{ route('admins.page_texts.edit', $pageText) }}" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-1 px-3 rounded">Edit</a>
-                            <form action="{{ route('admins.page_texts.destroy', $pageText) }}" method="POST" class="inline">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="bg-red-500 hover:bg-red-600 text-white font-semibold py-1 px-3 rounded ml-2">Delete</button>
-                            </form>
                         </td>
                     </tr>
                 @empty

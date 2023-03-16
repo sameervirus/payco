@@ -301,7 +301,7 @@ $(function () {
         });
         $(this).addClass("active-category");
         $("#category-title").text($(this).text());
-        const slug = $(this).attr("id");
+        const slug = $(this).attr("slug");
         $("#category-link").attr("href", "/category/" + slug);
 
         $("#categories-div > *:gt(0)").remove();

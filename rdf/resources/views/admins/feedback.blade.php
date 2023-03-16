@@ -4,10 +4,7 @@
             <h1 class="font-bold pl-2">Website Feed Back</h1>
         </div>
     </div>
-    <div class="mx-5">
-        <div class="w-full max-w-full">
-        <div class="relative flex flex-col min-w-0 break-words bg-white border-0 shadow-soft-xl rounded-2xl bg-clip-border">
-            <div class="table-responsive p-10">
+    <div class="lg:mx-20 my-10">
             <table class="table table-flush text-slate-500" datatable id="datatable-search">
                 <thead class="thead-light">
                 <tr>
@@ -40,9 +37,6 @@
                 @endforeach
                 </tbody>
             </table>
-            </div>
-        </div>
-        </div>
     </div>
     <script>
         $('.table').dataTable();

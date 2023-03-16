@@ -124,7 +124,7 @@
     </section>
     <section class="flex flex-col mx-5 lg:mx-28 mb-10 mt-20 lg:mt-32">
         <div>
-            <x-section-title><span class="text-primary">A</span>dvisor Report Members</x-section-title>
+            <x-section-title><span class="text-primary">A</span>dvisory Board Members</x-section-title>
             <x-section-subtitle>Meet our team of Experts</x-section-subtitle>
         </div>
         <div class="grid grid-col-1 lg:grid-cols-4 gap-8 mt-20">

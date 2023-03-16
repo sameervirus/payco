@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>{{ config('app.name', 'Payco') }}</title>
         <link rel="icon" type="image/png" href="http://www.payco.technodyna.com/images/favicon.png">
 
         <!-- Fonts -->
@@ -48,7 +48,10 @@
                                 <button onclick="toggleDD('myDropdown')" class="drop-button text-white py-2 px-2"> <span class="pr-2"><i class="em em-robot_face"></i></span> Hi, User <svg class="h-3 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></button>
                                 <div id="myDropdown" class="dropdownlist absolute bg-gray-800 text-white right-0 mt-3 p-3 overflow-auto z-30 invisible">
-                                    <a href="#" class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block"><i class="fas fa-sign-out-alt fa-fw"></i> Log Out</a>
+                                    <form action="{{ route('logout') }}" method="POST" class="inline">
+                                        @csrf
+                                        <button type="submit" class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block"><i class="fas fa-sign-out-alt fa-fw"></i> Log Out</button>
+                                    </form>
                                 </div>
                             </div>
                         </li>
@@ -83,7 +86,7 @@
                                     <span class="pb-1 md:pb-0 text-xs md:text-base text-white md:text-white block md:inline-block">Feedback</span>
                                 </a>
                             </li>
-                            <li class="mr-3 flex-1">
+                            <li class="hidden mr-3 flex-1">
                                 <a href="#" class="block py-1 md:py-3 pl-0 md:pl-1 align-middle text-white no-underline hover:text-white border-b-2 {{ (request()->is('admin/posts')) ? 'border-red-500' : 'border-gray-800' }} hover:border-red-500">
                                     <span class="pb-1 md:pb-0 text-xs md:text-base text-gray-400 md:text-gray-200 block md:inline-block">Payments</span>
                                 </a>
@@ -94,7 +97,7 @@
 
                 </div>
             </nav>
-            <section class="flex-1">
+            <section class="flex-1 overflow-auto">
                 <div id="main" class="main-content flex-1 bg-gray-100 mt-12 md:mt-2 pb-24 md:pb-5">
                     {{ $slot }}
                 </div>

@@ -5,16 +5,18 @@
     </div>
     <div class="absolute left-0 top-0 min-h-[1290px] w-full -z-10 bg-cover" style="background-image: url('/images/1060_1.png');background-repeat: no-repeat;"></div>
     <div class="hidden lg:flex flex-col absolute left-[3rem] top-[31rem] space-y-10">
-        <a href="/">
+        <a href="https://www.linkedin.com/company/thepaycompany/" target="_blank">
             <svg fill="#CCCCCC" class="w-[30px] h-[30px] lg:w-[40px] lg:h-[40px] rotate-90" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z M41.4,508.1H-8.5V348.4h49.9V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7 c18.4,0,29.7,11.9,30.1,27.7C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4 c-14.9,0-23.2,10-27,19.6c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6 c35.5,0,63.3,23,63.3,72.4V508.1z"></path> </g></svg>
         </a>
-        <a href="/">
+        <a href="https://www.crunchbase.com/organization/the-pay-company-ag" target="_blank">
             <svg fill="#CCCCCC" class="w-[30px] h-[30px] lg:w-[40px] lg:h-[40px] rotate-90" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>Crunchbase icon</title><path d="M21.6 0H2.4A2.41 2.41 0 0 0 0 2.4v19.2A2.41 2.41 0 0 0 2.4 24h19.2a2.41 2.41 0 0 0 2.4-2.4V2.4A2.41 2.41 0 0 0 21.6 0zM7.045 14.465A2.11 2.11 0 0 0 9.84 13.42h1.66a3.69 3.69 0 1 1 0-1.75H9.84a2.11 2.11 0 1 0-2.795 2.795zm11.345.845a3.55 3.55 0 0 1-1.06.63 3.68 3.68 0 0 1-3.39-.38v.38h-1.51V5.37h1.5v4.11a3.74 3.74 0 0 1 1.8-.63H16a3.67 3.67 0 0 1 2.39 6.46zm-.223-2.766a2.104 2.104 0 1 1-4.207 0 2.104 2.104 0 0 1 4.207 0z"></path></g></svg>
         </a>
     </div>
     <div class="flex flex-col pt-12 lg:pt-32">
         <div class="flex justify-center items-center">
-            <img src="/images/vector.png" alt="vector" class=" w-[18px] h-[22px]">
+            <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 0L0 4V10C0 15.55 3.84 20.74 9 22C14.16 20.74 18 15.55 18 10V4L9 0ZM9 6C10.4 6 11.8 7.1 11.8 8.5V10C12.4 10 13 10.6 13 11.3V14.8C13 15.4 12.4 16 11.7 16H6.2C5.6 16 5 15.4 5 14.7V11.2C5 10.6 5.6 10 6.2 10V8.5C6.2 7.1 7.6 6 9 6ZM9 7.2C8.2 7.2 7.5 7.7 7.5 8.5V10H10.5V8.5C10.5 7.7 9.8 7.2 9 7.2Z" fill="#FF0000"/>
+            </svg>
             <p class="text-primary ml-3 font-bold uppercase text-xl">Secure digital Wallet</p>
         </div>
         <div class="text-center px-3 lg:px-80">

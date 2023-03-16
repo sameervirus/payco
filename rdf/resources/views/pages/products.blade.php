@@ -2,7 +2,9 @@
     <div class="absolute left-0 top-0 min-h-[1188px] w-full -z-10 bg-cover opacity-20" style="background-image: url('/images/product.jpg');background-repeat: no-repeat;"></div>
     <div class="flex flex-col pt-12 lg:pt-32">
         <div class="flex justify-center items-center">
-            <img src="/images/vector.png" alt="vector" class=" w-[18px] h-[22px]">
+            <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 0L0 4V10C0 15.55 3.84 20.74 9 22C14.16 20.74 18 15.55 18 10V4L9 0ZM9 6C10.4 6 11.8 7.1 11.8 8.5V10C12.4 10 13 10.6 13 11.3V14.8C13 15.4 12.4 16 11.7 16H6.2C5.6 16 5 15.4 5 14.7V11.2C5 10.6 5.6 10 6.2 10V8.5C6.2 7.1 7.6 6 9 6ZM9 7.2C8.2 7.2 7.5 7.7 7.5 8.5V10H10.5V8.5C10.5 7.7 9.8 7.2 9 7.2Z" fill="#FF0000"/>
+            </svg>
             <p class="text-primary ml-3 font-bold uppercase lg:text-xl">Products and Services</p>
         </div>
         <div class="text-center px-3 lg:px-80">

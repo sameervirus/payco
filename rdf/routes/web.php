@@ -27,26 +27,24 @@ Route::get('/blog', [WebsiteController::class, 'blog'])->name('blog');
 Route::get('/contact-us', [WebsiteController::class, 'contacts'])->name('contacts');
 Route::post('/contact-us', [WebsiteController::class, 'feedback'])->name('feedback');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::resource('/admin/posts', PostController::class, ['as' => 'admin']);
-Route::get('/admin/feedback', [AdminController::class, 'feeds']);
-Route::resource('/admin/page_texts', PageTextController::class, ['as' => 'admins']);
-Route::middleware('auth')->group(function () {
+Route::middleware(['auth', 'verified', 'admin'])->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+    Route::resource('/admin/posts', PostController::class, ['as' => 'admin']);
+    Route::get('/admin/feedback', [AdminController::class, 'feeds']);
+    Route::resource('/admin/page_texts', PageTextController::class, ['as' => 'admins']);
 });
 
 require __DIR__.'/auth.php';
 require __DIR__.'/register.php';
 
 
-Route::get("test", function() {
+Route::get("clear", function() {
     Artisan::call('optimize:clear');
     Artisan::call('config:clear');
     Artisan::call('storage:link');
-    return public_path();
+    return "done";
 });
