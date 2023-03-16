@@ -45,9 +45,8 @@
                     <div class="relative mt-5">
                         <label class="text-white text-xs lg:text-sm font-semibold px-2">Country *</label>
                         <select class="w-full bg-white/[0.07] border-[#838383] text-white rounded-[10px] backdrop-blur-[12.5] p-2" name="country_id" required>
-                            <option class="bg-[#130000]" value="204">SWAZILAND</option>
                             @foreach(\App\Models\Country::all() as $country)
-                            <option class="bg-[#130000]" value="{{$country->id}}" @if(old('country_id') == $country->id) selected @endif>{{ $country->name }}</option>
+                            <option class="bg-[#130000]" value="{{$country->id}}" @if(old('country_id', 204) == $country->id) selected @endif>{{ $country->name }}</option>
                             @endforeach
                         </select>
                     </div>
