@@ -6,7 +6,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ config('app.name', 'Payco') }}</title>
-        <link rel="icon" type="image/png" href="http://www.payco.technodyna.com/images/favicon.png">
+        <link rel="icon" type="image/png" href="{{asset('images/favicon.png')}}">
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
