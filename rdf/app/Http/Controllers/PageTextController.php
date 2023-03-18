@@ -41,7 +41,7 @@ class PageTextController extends Controller
 
     public function update(Request $request, PageText $pageText)
     {
-        $pageText->title = $request->title;
+        // $pageText->title = $request->title;
         $pageText->content = $request->content;
         $pageText->save();
 
