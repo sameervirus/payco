@@ -143,6 +143,7 @@ select {
 
 #passwordForm .valid {
     background-color: #4dbc18;
+    color: #1e1e1e;
 }
 
 .invset-bg {

@@ -4,7 +4,7 @@
             <img class="hidden lg:block h-[66px] w-[199px]" src="/images/logo-white.png" alt="payco" />
             <h1 class="font-black text-base lg:text-3xl text-primary uppercase">Welcome to Payco</h1>
             <p class="lg:text-lg text-[13px] text-white/70">
-                Your solution for secure and convenient cross-border payments. Our digital wallet and platform make it easy for individuals to send money internationally, pay for goods and services, and make charitable donations.</p>
+                {{ $page_texts->where('title', 'Login')->first()->content ?? ''}}</p>
         </div>
         <div class="flex lg:flex-1 flex-col space-y-10">
             <div class="flex items-center">
