@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        <meta name="description" content="The Pay Company AG is a digital solutions provider for cross-border payments, providing secure and convenient services for individuals and businesses. With Payco, you can easily send money internationally, issue letters of credit, and conduct transactions using our secure digital wallet.">
 
         <title>{{ config('app.name', 'Payco') }}</title>
         <link rel="icon" type="image/png" href="{{asset('images/favicon.png')}}">
