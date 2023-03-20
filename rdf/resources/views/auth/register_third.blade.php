@@ -4,9 +4,9 @@
         <div class="flex flex-col items-center w-full lg:w-1/2 h-3/4 bg-black/30 backdrop-blur-[30px] z-50 p-5">
             <img class="w-[216px] h-[216px] lg:w-[236px] lg:h-[236px]" src="/images/animation_640_ld26dz8j1.gif" alt="success">
             <h2 class="text-white text-lg lg:text-[34px] font-bold">Woho, you are Almost there!</h2>
-            <p class="text-white/60 text-center text-sm lg:text-2xl mt-5 lg:mt-10">You have created your account successfully, Start now with Payco your safe transaction</p>
+            <p class="text-white/60 text-center text-sm lg:text-2xl mt-5 lg:mt-10">{{ $page_texts->where('title', 'Account Created')->first()->content ?? ''}}</p>
             <x-primary-button contentClasses="border-none text-white bg-primary hover:text-white hover:bg-white/[0.13] lg:!py-2 !px-[70px] lg:!px-[100px] mt-5 lg:mt-10">
-                <a href="#" class="uppercase font-medium lg:text-lg">Start Now</a>
+                <a href="/" class="uppercase font-medium lg:text-lg">Start Now</a>
             </x-primary-button>
         </div>
     </div>
@@ -18,7 +18,7 @@
             <img class="hidden lg:block h-[66px] w-[199px]" src="/images/logo-white.png" alt="payco" />
             <h1 class="font-black text-base lg:text-3xl text-primary uppercase">Welcome to Payco</h1>
             <p class="lg:text-lg text-[13px] text-white/70">
-                Your solution for secure and convenient cross-border payments. Our digital wallet and platform make it easy for individuals to send money internationally, pay for goods and services, and make charitable donations.</p>
+                {{ $page_texts->where('title', 'Login')->first()->content ?? ''}}</p>
         </div>
         <div class="flex lg:flex-1 flex-col space-y-10">
             <div class="flex items-center">
