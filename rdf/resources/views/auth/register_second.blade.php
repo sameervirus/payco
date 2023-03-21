@@ -21,6 +21,7 @@
             </div>
             <p class="text-[#ffffffb3] lg:text-[22px] mt-6">We have sent you a code to </p>
             <p class="lg:text-[22px] text-primary font-semibold mt-3">{{ $email }}</p>
+            <small class="text-[#ffffffb3]">If you can't find verification email in your inbox, please check your spam folder.</small>
             <div class="pb-10 lg:pb-0 lg:pr-[170px] mt-10">
                 <form method="POST" action="{{ route('verify', ['email' => $email]) }}" id="verifyForm">
                     @csrf
