@@ -96,7 +96,7 @@
                         <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
                     </div>
                     <div class="flex flex-wrap text-[9px] lg:text-[12px] text-[#BABABA] space-x-1 lg:space-x-2 mt-5">
-                        <div id="passLength" class="border border-[#838383] rounded-full px-2 py-1 mb-2">Minimum length 6-8 Characters</div>
+                        <div id="passLength" class="border border-[#838383] rounded-full px-2 py-1 mb-2">Minimum length 6 Characters</div>
                         <div id="passUpper" class="border border-[#838383] rounded-full px-2 py-1 mb-2">Contains upper case character</div>
                         <div id="passLower" class="border border-[#838383] rounded-full px-2 py-1 mb-2">Contains Lower case character</div>
                         <div id="passMatch" class="border border-[#838383] rounded-full px-2 py-1 mb-2">Two Passwords match</div>

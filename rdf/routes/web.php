@@ -35,6 +35,7 @@ Route::middleware(['auth', 'verified', 'admin'])->group(function () {
 
     Route::resource('/admin/posts', PostController::class, ['as' => 'admin']);
     Route::get('/admin/feedback', [AdminController::class, 'feeds']);
+    Route::get('/admin/users', [AdminController::class, 'users']);
     Route::resource('/admin/page_texts', PageTextController::class, ['as' => 'admins']);
 });
 

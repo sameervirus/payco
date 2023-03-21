@@ -124,10 +124,10 @@ $(function () {
         if (passwordValue.length == "") {
             $("#passwordcheck").show();
             passwordError = false;
-        } else if (passwordValue.length < 5 || passwordValue.length > 9) {
+        } else if (passwordValue.length < 5 || passwordValue.length > 255) {
             $("#passwordcheck").show();
             $("#passwordcheck").html(
-                "**length of password must be between 6 and 8"
+                "**length of password must be more than 6 characters"
             );
             passwordError = false;
         } else {
@@ -179,7 +179,7 @@ $(function () {
 
 $(function () {
     $("#passwordForm #password").on("keyup", function () {
-        if ($(this).val().length > 5 && $(this).val().length < 9) {
+        if ($(this).val().length > 5 && $(this).val().length < 255) {
             $("#passwordForm #passLength").addClass("valid");
         } else {
             $("#passwordForm #passLength").removeClass("valid");

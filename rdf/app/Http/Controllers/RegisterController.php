@@ -42,6 +42,7 @@ class RegisterController extends Controller
             $u = User::updateOrCreate([
                 'name' => $request->name,
                 'email' => $request->email,
+                'phone' => $request->phone,
                 'country_id' => $request->country_id,
             ]);
             VerificationCode::send($u->email);
